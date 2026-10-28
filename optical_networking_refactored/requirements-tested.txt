@@ -1,0 +1,5 @@
+# Exact dependencies used for the recorded validation run.
+numpy==2.3.5
+scipy==1.17.0
+networkx==3.7
+matplotlib==3.10.8

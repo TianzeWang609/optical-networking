@@ -1,0 +1,16 @@
+{
+  "original_file": "step25_traffic_vs_distance.py",
+  "original_sha256": "00676e1d7179801c691de9092696b74cabbac349128d74b4a242cb199340852e",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "networkx": "3.7",
+    "matplotlib": "3.10.8"
+  },
+  "physical_constants_match_relative_tolerance": 1e-12,
+  "power_margin_comparisons_passed": 1044,
+  "distance_comparisons_passed": 12,
+  "regression_tests_passed": 9,
+  "note": "Validated on Linux Python 3.12; Windows Python 3.13 was not directly available for execution."
+}
