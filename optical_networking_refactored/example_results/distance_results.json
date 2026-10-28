@@ -1,0 +1,193 @@
+{
+  "experiment": "distance",
+  "physical_config": {
+    "alpha_db_per_km": 0.22,
+    "span_length_km": 80.0,
+    "gamma_per_w_km": 1.3,
+    "beta2_abs_s2_per_km": 2.13e-23,
+    "symbol_rate_baud": 200000000000.0,
+    "channel_count": 25,
+    "channel_spacing_hz": 400000000000.0,
+    "carrier_frequency_hz": 193500000000000.0,
+    "noise_figure_db": 4.5,
+    "fec_overhead": 0.2,
+    "epsilon": 0.0
+  },
+  "baseline_links": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "length_km": 400
+    },
+    {
+      "nodes": [
+        "B",
+        "D"
+      ],
+      "length_km": 400
+    },
+    {
+      "nodes": [
+        "A",
+        "C"
+      ],
+      "length_km": 800
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "length_km": 800
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "length_km": 1200
+    }
+  ],
+  "baseline_free_wavelengths": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "wavelengths": [
+        1,
+        2
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "D"
+      ],
+      "wavelengths": [
+        3,
+        4
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "C"
+      ],
+      "wavelengths": [
+        5,
+        6
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "wavelengths": [
+        6,
+        7
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "wavelengths": [
+        2,
+        6
+      ]
+    }
+  ],
+  "requests": [
+    [
+      "C",
+      "D",
+      1000.0
+    ],
+    [
+      "A",
+      "D",
+      1000.0
+    ],
+    [
+      "B",
+      "D",
+      1000.0
+    ],
+    [
+      "A",
+      "D",
+      1000.0
+    ]
+  ],
+  "k_candidates": 4,
+  "results": {
+    "power_dbm": 6.165990524656909,
+    "samples": [
+      {
+        "distance_scale": 1,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 3000.0
+      },
+      {
+        "distance_scale": 1,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 3000.0
+      },
+      {
+        "distance_scale": 2,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 3000.0
+      },
+      {
+        "distance_scale": 2,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 2000.0
+      },
+      {
+        "distance_scale": 3,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 2000.0
+      },
+      {
+        "distance_scale": 3,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 1000.0
+      },
+      {
+        "distance_scale": 4,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 2000.0
+      },
+      {
+        "distance_scale": 4,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 1000.0
+      },
+      {
+        "distance_scale": 5,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 2000.0
+      },
+      {
+        "distance_scale": 5,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 0.0
+      },
+      {
+        "distance_scale": 6,
+        "snr_margin_db": 0.0,
+        "admitted_traffic_gbps": 1000.0
+      },
+      {
+        "distance_scale": 6,
+        "snr_margin_db": 4.0,
+        "admitted_traffic_gbps": 0.0
+      }
+    ]
+  }
+}

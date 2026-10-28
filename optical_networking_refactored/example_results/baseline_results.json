@@ -1,0 +1,160 @@
+{
+  "experiment": "baseline",
+  "physical_config": {
+    "alpha_db_per_km": 0.22,
+    "span_length_km": 80.0,
+    "gamma_per_w_km": 1.3,
+    "beta2_abs_s2_per_km": 2.13e-23,
+    "symbol_rate_baud": 200000000000.0,
+    "channel_count": 25,
+    "channel_spacing_hz": 400000000000.0,
+    "carrier_frequency_hz": 193500000000000.0,
+    "noise_figure_db": 4.5,
+    "fec_overhead": 0.2,
+    "epsilon": 0.0
+  },
+  "baseline_links": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "length_km": 400
+    },
+    {
+      "nodes": [
+        "B",
+        "D"
+      ],
+      "length_km": 400
+    },
+    {
+      "nodes": [
+        "A",
+        "C"
+      ],
+      "length_km": 800
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "length_km": 800
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "length_km": 1200
+    }
+  ],
+  "baseline_free_wavelengths": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "wavelengths": [
+        1,
+        2
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "D"
+      ],
+      "wavelengths": [
+        3,
+        4
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "C"
+      ],
+      "wavelengths": [
+        5,
+        6
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "wavelengths": [
+        6,
+        7
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "wavelengths": [
+        2,
+        6
+      ]
+    }
+  ],
+  "requests": [
+    [
+      "C",
+      "D",
+      1000.0
+    ],
+    [
+      "A",
+      "D",
+      1000.0
+    ],
+    [
+      "B",
+      "D",
+      1000.0
+    ],
+    [
+      "A",
+      "D",
+      1000.0
+    ]
+  ],
+  "k_candidates": 4,
+  "results": [
+    {
+      "length_km": 800.0,
+      "snr_db": 18.21540798958553,
+      "modulation": "PM-32QAM",
+      "net_rate_gbps": 1666.6666666666667
+    },
+    {
+      "length_km": 1600.0,
+      "snr_db": 15.20510803294572,
+      "modulation": "PM-16QAM",
+      "net_rate_gbps": 1333.3333333333335
+    },
+    {
+      "length_km": 2400.0,
+      "snr_db": 13.444195442388907,
+      "modulation": "PM-16QAM",
+      "net_rate_gbps": 1333.3333333333335
+    },
+    {
+      "length_km": 3200.0,
+      "snr_db": 12.194808076305907,
+      "modulation": "PM-8QAM",
+      "net_rate_gbps": 1000.0
+    },
+    {
+      "length_km": 4000.0,
+      "snr_db": 11.225707946225343,
+      "modulation": "PM-8QAM",
+      "net_rate_gbps": 1000.0
+    }
+  ]
+}
