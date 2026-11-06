@@ -58,6 +58,31 @@ class ReferenceNetworkTests(unittest.TestCase):
         self.assertEqual(result.accepted_count, 0)
         self.assertTrue(result.optimal)
 
+    def test_equal_distance_bottleneck_uses_link_counts_then_first_fit(self):
+        # Via B: three common wavelengths, weakest link has three. Via C:
+        # two common wavelengths, but both links have four. Via E is longer.
+        links = {("A", "B"): 80, ("B", "D"): 80, ("A", "C"): 80,
+                 ("C", "D"): 80, ("A", "E"): 80, ("E", "D"): 160}
+        state = {("A", "B"): {1, 2, 3}, ("B", "D"): {1, 2, 3},
+                 ("A", "C"): {4, 5, 6, 7}, ("C", "D"): {1, 2, 4, 6},
+                 ("A", "E"): set(range(1, 9)), ("D", "E"): set(range(1, 9))}
+        original = copy.deepcopy(state)
+        network = OpticalNetwork(self.model, links)
+        requests = [("A", "D", 100)]
+        baseline = network.solve_sequential(requests, state, self.power, "min", 2)
+        online = network.solve_sequential(requests, state, self.power, "min", 2,
+                                          route_rule="widest_bottleneck")
+        self.assertEqual((baseline.plan[0].route, baseline.plan[0].wavelength), (("A", "B", "D"), 1))
+        self.assertEqual((online.plan[0].route, online.plan[0].wavelength), (("A", "C", "D"), 4))
+        self.assertEqual(state, original)
+        # Equally scored paths keep candidate order. The preferred path must
+        # still have a common wavelength, even when each link has more free slots.
+        for cd_waves in ({1, 2, 4}, {8, 9, 10, 11}):
+            state[("C", "D")] = cd_waves
+            result = network.solve_sequential(requests, state, self.power, "min", 2,
+                                              route_rule="widest_bottleneck")
+            self.assertEqual(result.plan[0].route, ("A", "B", "D"))
+
     def test_snr_margin_boundary(self):
         links, state, requests = reference_toy_case()
         network = OpticalNetwork(self.model, links)

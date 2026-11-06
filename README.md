@@ -22,6 +22,17 @@ Code identifiers, output and plot labels use English; code comments use Chinese.
   paired uniform/hotspot and fixed/mixed traffic experiments.
 - [EXPERIMENTS_WEEK2.md](EXPERIMENTS_WEEK2.md): Chinese experiment guide, assumptions
   and interpretation of the new results.
+- `python step33_online_routing.py` replays the Step 32 fixed-rate batches with
+  a congestion-aware tie-break. See the [paired results and interpretation](results_step33/README.md).
+- `python step34_hotspot_strength.py` sweeps nine hotspot probabilities and compares
+  both online rules on 40 new seeds. See the [hotspot strength results](results_step34/README.md).
+- `python step35_wavelength_conversion.py` compares no, A-only and network-wide
+  wavelength conversion on the archived fixed-rate batches, including certified
+  offline optima. See the [conversion results and model assumptions](results_step35/README.md).
+- `python review_mixed_rates.py` repeats the Step 33–35 comparisons with paired
+  50/100/150 Gbit/s demands. See the [mixed-rate results](results_mixed_rate_review/README.md).
+- `python step36_endpoint_grooming.py` compares dedicated lightpaths and online
+  same-endpoint grooming on those mixed batches. See the [admissions, wavelengths and rate classes](results_step36/README.md).
 
 ## Reference network and larger traffic experiments
 

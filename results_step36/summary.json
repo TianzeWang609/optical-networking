@@ -1,0 +1,916 @@
+{
+  "source_sha256": "d63caf254e76977b9045e7fee7e00d6faf293119766ab7a4238fca89af22f54a",
+  "pair_count": 80,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "k_candidates": 4,
+  "power_dbm": -1.4995629512219557,
+  "margin_db": 2.0,
+  "physical_channels": 80,
+  "links": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "E"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "F"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "G"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "D",
+        "H"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "E",
+        "F"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "E",
+        "I"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "F",
+        "G"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "F",
+        "J"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "G",
+        "H"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "G",
+        "K"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "H",
+        "L"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "I",
+        "J"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "J",
+        "K"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "K",
+        "L"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    }
+  ],
+  "hotspot": "F",
+  "hotspot_share": 0.65,
+  "service": "Continuous wavelength per lightpath, no conversion or departures. Reuse only the same ordered endpoints. All of a client's rate must fit in one lightpath. Tightest residual capacity first, then earliest lightpath. New paths use KSP-FF.",
+  "summary": [
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 24,
+      "seed_count": 10,
+      "gain_gbps": 10.0,
+      "gain_range_gbps": [
+        0.0,
+        100.0
+      ],
+      "wins": 1,
+      "ties": 9,
+      "losses": 0,
+      "mean_newly_served": 0.1,
+      "mean_displaced": 0,
+      "off": {
+        "accepted": 23.9,
+        "admitted_gbps": 2390.0,
+        "lightpaths": 23.9,
+        "reused_requests": 0,
+        "used_link_wavelengths": 50.8,
+        "hotspot_endpoint_clients": 15.8,
+        "hotspot_endpoint_lightpaths": 15.8,
+        "hotspot_transit_lightpaths": 2,
+        "hotspot_used_incident_wavelengths": 19.8,
+        "request_blocking": 0.004166666666666663,
+        "bandwidth_blocking": 0.004166666666666663,
+        "class_counts": {
+          "50": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          },
+          "100": {
+            "accepted": 119,
+            "offered": 120,
+            "acceptance_fraction": 0.9916666666666667
+          },
+          "150": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          }
+        }
+      },
+      "on": {
+        "accepted": 24,
+        "admitted_gbps": 2400.0,
+        "lightpaths": 18.8,
+        "reused_requests": 5.2,
+        "used_link_wavelengths": 40.3,
+        "hotspot_endpoint_clients": 15.9,
+        "hotspot_endpoint_lightpaths": 11,
+        "hotspot_transit_lightpaths": 2.1,
+        "hotspot_used_incident_wavelengths": 15.2,
+        "request_blocking": 0.0,
+        "bandwidth_blocking": 0.0,
+        "class_counts": {
+          "50": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          },
+          "100": {
+            "accepted": 120,
+            "offered": 120,
+            "acceptance_fraction": 1.0
+          },
+          "150": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 48,
+      "seed_count": 10,
+      "gain_gbps": 835.0,
+      "gain_range_gbps": [
+        550.0,
+        1100.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 8.1,
+      "mean_displaced": 0,
+      "off": {
+        "accepted": 39,
+        "admitted_gbps": 3870.0,
+        "lightpaths": 39,
+        "reused_requests": 0,
+        "used_link_wavelengths": 84.9,
+        "hotspot_endpoint_clients": 24.5,
+        "hotspot_endpoint_lightpaths": 24.5,
+        "hotspot_transit_lightpaths": 3.1,
+        "hotspot_used_incident_wavelengths": 30.7,
+        "request_blocking": 0.1875,
+        "bandwidth_blocking": 0.19374999999999998,
+        "class_counts": {
+          "50": {
+            "accepted": 100,
+            "offered": 120,
+            "acceptance_fraction": 0.8333333333333334
+          },
+          "100": {
+            "accepted": 196,
+            "offered": 240,
+            "acceptance_fraction": 0.8166666666666667
+          },
+          "150": {
+            "accepted": 94,
+            "offered": 120,
+            "acceptance_fraction": 0.7833333333333333
+          }
+        }
+      },
+      "on": {
+        "accepted": 47.1,
+        "admitted_gbps": 4705.0,
+        "lightpaths": 33.6,
+        "reused_requests": 13.5,
+        "used_link_wavelengths": 74.5,
+        "hotspot_endpoint_clients": 30.7,
+        "hotspot_endpoint_lightpaths": 18.2,
+        "hotspot_transit_lightpaths": 4.4,
+        "hotspot_used_incident_wavelengths": 27,
+        "request_blocking": 0.01875,
+        "bandwidth_blocking": 0.019791666666666673,
+        "class_counts": {
+          "50": {
+            "accepted": 119,
+            "offered": 120,
+            "acceptance_fraction": 0.9916666666666667
+          },
+          "100": {
+            "accepted": 234,
+            "offered": 240,
+            "acceptance_fraction": 0.975
+          },
+          "150": {
+            "accepted": 118,
+            "offered": 120,
+            "acceptance_fraction": 0.9833333333333333
+          }
+        }
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 72,
+      "seed_count": 10,
+      "gain_gbps": 1935.0,
+      "gain_range_gbps": [
+        1400.0,
+        2450.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 20.1,
+      "mean_displaced": 0.1,
+      "off": {
+        "accepted": 43.9,
+        "admitted_gbps": 4395.0,
+        "lightpaths": 43.9,
+        "reused_requests": 0,
+        "used_link_wavelengths": 93.7,
+        "hotspot_endpoint_clients": 25.6,
+        "hotspot_endpoint_lightpaths": 25.6,
+        "hotspot_transit_lightpaths": 3.1,
+        "hotspot_used_incident_wavelengths": 31.8,
+        "request_blocking": 0.3902777777777778,
+        "bandwidth_blocking": 0.38958333333333334,
+        "class_counts": {
+          "50": {
+            "accepted": 112,
+            "offered": 180,
+            "acceptance_fraction": 0.6222222222222222
+          },
+          "100": {
+            "accepted": 214,
+            "offered": 360,
+            "acceptance_fraction": 0.5944444444444444
+          },
+          "150": {
+            "accepted": 113,
+            "offered": 180,
+            "acceptance_fraction": 0.6277777777777778
+          }
+        }
+      },
+      "on": {
+        "accepted": 63.9,
+        "admitted_gbps": 6330.0,
+        "lightpaths": 40,
+        "reused_requests": 23.9,
+        "used_link_wavelengths": 86.4,
+        "hotspot_endpoint_clients": 42.1,
+        "hotspot_endpoint_lightpaths": 21.8,
+        "hotspot_transit_lightpaths": 3.9,
+        "hotspot_used_incident_wavelengths": 29.6,
+        "request_blocking": 0.1125,
+        "bandwidth_blocking": 0.12083333333333332,
+        "class_counts": {
+          "50": {
+            "accepted": 167,
+            "offered": 180,
+            "acceptance_fraction": 0.9277777777777778
+          },
+          "100": {
+            "accepted": 317,
+            "offered": 360,
+            "acceptance_fraction": 0.8805555555555555
+          },
+          "150": {
+            "accepted": 155,
+            "offered": 180,
+            "acceptance_fraction": 0.8611111111111112
+          }
+        }
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 96,
+      "seed_count": 10,
+      "gain_gbps": 2385.0,
+      "gain_range_gbps": [
+        1500.0,
+        2900.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 26.4,
+      "mean_displaced": 0.5,
+      "off": {
+        "accepted": 48.8,
+        "admitted_gbps": 4910.0,
+        "lightpaths": 48.8,
+        "reused_requests": 0,
+        "used_link_wavelengths": 101.7,
+        "hotspot_endpoint_clients": 25.8,
+        "hotspot_endpoint_lightpaths": 25.8,
+        "hotspot_transit_lightpaths": 3.1,
+        "hotspot_used_incident_wavelengths": 32,
+        "request_blocking": 0.4916666666666667,
+        "bandwidth_blocking": 0.48854166666666665,
+        "class_counts": {
+          "50": {
+            "accepted": 118,
+            "offered": 240,
+            "acceptance_fraction": 0.49166666666666664
+          },
+          "100": {
+            "accepted": 246,
+            "offered": 480,
+            "acceptance_fraction": 0.5125
+          },
+          "150": {
+            "accepted": 124,
+            "offered": 240,
+            "acceptance_fraction": 0.5166666666666667
+          }
+        }
+      },
+      "on": {
+        "accepted": 74.7,
+        "admitted_gbps": 7295.0,
+        "lightpaths": 44.8,
+        "reused_requests": 29.9,
+        "used_link_wavelengths": 94.5,
+        "hotspot_endpoint_clients": 47.9,
+        "hotspot_endpoint_lightpaths": 23.3,
+        "hotspot_transit_lightpaths": 3.8,
+        "hotspot_used_incident_wavelengths": 30.9,
+        "request_blocking": 0.22187500000000002,
+        "bandwidth_blocking": 0.24010416666666665,
+        "class_counts": {
+          "50": {
+            "accepted": 205,
+            "offered": 240,
+            "acceptance_fraction": 0.8541666666666666
+          },
+          "100": {
+            "accepted": 372,
+            "offered": 480,
+            "acceptance_fraction": 0.775
+          },
+          "150": {
+            "accepted": 170,
+            "offered": 240,
+            "acceptance_fraction": 0.7083333333333334
+          }
+        }
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 24,
+      "seed_count": 10,
+      "gain_gbps": 0.0,
+      "gain_range_gbps": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "mean_newly_served": 0,
+      "mean_displaced": 0,
+      "off": {
+        "accepted": 24,
+        "admitted_gbps": 2400.0,
+        "lightpaths": 24,
+        "reused_requests": 0,
+        "used_link_wavelengths": 53.7,
+        "hotspot_endpoint_clients": 2.4,
+        "hotspot_endpoint_lightpaths": 2.4,
+        "hotspot_transit_lightpaths": 6.8,
+        "hotspot_used_incident_wavelengths": 16,
+        "request_blocking": 0.0,
+        "bandwidth_blocking": 0.0,
+        "class_counts": {
+          "50": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          },
+          "100": {
+            "accepted": 120,
+            "offered": 120,
+            "acceptance_fraction": 1.0
+          },
+          "150": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          }
+        }
+      },
+      "on": {
+        "accepted": 24,
+        "admitted_gbps": 2400.0,
+        "lightpaths": 20.5,
+        "reused_requests": 3.5,
+        "used_link_wavelengths": 47.2,
+        "hotspot_endpoint_clients": 2.4,
+        "hotspot_endpoint_lightpaths": 1.8,
+        "hotspot_transit_lightpaths": 6.3,
+        "hotspot_used_incident_wavelengths": 14.4,
+        "request_blocking": 0.0,
+        "bandwidth_blocking": 0.0,
+        "class_counts": {
+          "50": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          },
+          "100": {
+            "accepted": 120,
+            "offered": 120,
+            "acceptance_fraction": 1.0
+          },
+          "150": {
+            "accepted": 60,
+            "offered": 60,
+            "acceptance_fraction": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 48,
+      "seed_count": 10,
+      "gain_gbps": 460.0,
+      "gain_range_gbps": [
+        300.0,
+        750.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 4.7,
+      "mean_displaced": 0.1,
+      "off": {
+        "accepted": 42.7,
+        "admitted_gbps": 4265.0,
+        "lightpaths": 42.7,
+        "reused_requests": 0,
+        "used_link_wavelengths": 92.3,
+        "hotspot_endpoint_clients": 6.2,
+        "hotspot_endpoint_lightpaths": 6.2,
+        "hotspot_transit_lightpaths": 10.2,
+        "hotspot_used_incident_wavelengths": 26.6,
+        "request_blocking": 0.11041666666666668,
+        "bandwidth_blocking": 0.11145833333333333,
+        "class_counts": {
+          "50": {
+            "accepted": 107,
+            "offered": 120,
+            "acceptance_fraction": 0.8916666666666667
+          },
+          "100": {
+            "accepted": 214,
+            "offered": 240,
+            "acceptance_fraction": 0.8916666666666667
+          },
+          "150": {
+            "accepted": 106,
+            "offered": 120,
+            "acceptance_fraction": 0.8833333333333333
+          }
+        }
+      },
+      "on": {
+        "accepted": 47.3,
+        "admitted_gbps": 4725.0,
+        "lightpaths": 36.7,
+        "reused_requests": 10.6,
+        "used_link_wavelengths": 83.7,
+        "hotspot_endpoint_clients": 6.9,
+        "hotspot_endpoint_lightpaths": 5.3,
+        "hotspot_transit_lightpaths": 9.8,
+        "hotspot_used_incident_wavelengths": 24.9,
+        "request_blocking": 0.014583333333333337,
+        "bandwidth_blocking": 0.01562500000000001,
+        "class_counts": {
+          "50": {
+            "accepted": 119,
+            "offered": 120,
+            "acceptance_fraction": 0.9916666666666667
+          },
+          "100": {
+            "accepted": 236,
+            "offered": 240,
+            "acceptance_fraction": 0.9833333333333333
+          },
+          "150": {
+            "accepted": 118,
+            "offered": 120,
+            "acceptance_fraction": 0.9833333333333333
+          }
+        }
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 72,
+      "seed_count": 10,
+      "gain_gbps": 1170.0,
+      "gain_range_gbps": [
+        600.0,
+        1450.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 12.3,
+      "mean_displaced": 0.6,
+      "off": {
+        "accepted": 52.2,
+        "admitted_gbps": 5185.0,
+        "lightpaths": 52.2,
+        "reused_requests": 0,
+        "used_link_wavelengths": 109.3,
+        "hotspot_endpoint_clients": 7.6,
+        "hotspot_endpoint_lightpaths": 7.6,
+        "hotspot_transit_lightpaths": 10.5,
+        "hotspot_used_incident_wavelengths": 28.6,
+        "request_blocking": 0.27499999999999997,
+        "bandwidth_blocking": 0.2798611111111111,
+        "class_counts": {
+          "50": {
+            "accepted": 137,
+            "offered": 180,
+            "acceptance_fraction": 0.7611111111111111
+          },
+          "100": {
+            "accepted": 255,
+            "offered": 360,
+            "acceptance_fraction": 0.7083333333333334
+          },
+          "150": {
+            "accepted": 130,
+            "offered": 180,
+            "acceptance_fraction": 0.7222222222222222
+          }
+        }
+      },
+      "on": {
+        "accepted": 63.9,
+        "admitted_gbps": 6355.0,
+        "lightpaths": 45,
+        "reused_requests": 18.9,
+        "used_link_wavelengths": 100,
+        "hotspot_endpoint_clients": 9.4,
+        "hotspot_endpoint_lightpaths": 7,
+        "hotspot_transit_lightpaths": 10.2,
+        "hotspot_used_incident_wavelengths": 27.4,
+        "request_blocking": 0.11249999999999999,
+        "bandwidth_blocking": 0.11736111111111111,
+        "class_counts": {
+          "50": {
+            "accepted": 164,
+            "offered": 180,
+            "acceptance_fraction": 0.9111111111111111
+          },
+          "100": {
+            "accepted": 318,
+            "offered": 360,
+            "acceptance_fraction": 0.8833333333333333
+          },
+          "150": {
+            "accepted": 157,
+            "offered": 180,
+            "acceptance_fraction": 0.8722222222222222
+          }
+        }
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 96,
+      "seed_count": 10,
+      "gain_gbps": 1845.0,
+      "gain_range_gbps": [
+        1500.0,
+        2250.0
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "mean_newly_served": 20.8,
+      "mean_displaced": 0.8,
+      "off": {
+        "accepted": 58.6,
+        "admitted_gbps": 5875.0,
+        "lightpaths": 58.6,
+        "reused_requests": 0,
+        "used_link_wavelengths": 118.3,
+        "hotspot_endpoint_clients": 8.6,
+        "hotspot_endpoint_lightpaths": 8.6,
+        "hotspot_transit_lightpaths": 10.5,
+        "hotspot_used_incident_wavelengths": 29.6,
+        "request_blocking": 0.38958333333333334,
+        "bandwidth_blocking": 0.3880208333333333,
+        "class_counts": {
+          "50": {
+            "accepted": 147,
+            "offered": 240,
+            "acceptance_fraction": 0.6125
+          },
+          "100": {
+            "accepted": 289,
+            "offered": 480,
+            "acceptance_fraction": 0.6020833333333333
+          },
+          "150": {
+            "accepted": 150,
+            "offered": 240,
+            "acceptance_fraction": 0.625
+          }
+        }
+      },
+      "on": {
+        "accepted": 78.6,
+        "admitted_gbps": 7720.0,
+        "lightpaths": 50.5,
+        "reused_requests": 28.1,
+        "used_link_wavelengths": 110.3,
+        "hotspot_endpoint_clients": 11.2,
+        "hotspot_endpoint_lightpaths": 7.8,
+        "hotspot_transit_lightpaths": 10.6,
+        "hotspot_used_incident_wavelengths": 29,
+        "request_blocking": 0.18125,
+        "bandwidth_blocking": 0.19583333333333333,
+        "class_counts": {
+          "50": {
+            "accepted": 214,
+            "offered": 240,
+            "acceptance_fraction": 0.8916666666666667
+          },
+          "100": {
+            "accepted": 386,
+            "offered": 480,
+            "acceptance_fraction": 0.8041666666666667
+          },
+          "150": {
+            "accepted": 186,
+            "offered": 240,
+            "acceptance_fraction": 0.775
+          }
+        }
+      }
+    }
+  ]
+}

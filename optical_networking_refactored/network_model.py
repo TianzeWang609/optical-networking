@@ -141,9 +141,12 @@ class OpticalNetwork:
         return AllocationResult(float(traffic), tuple(plan), variable_count, constraint_count, **solver_info)
 
     def solve_sequential(self, requests, initial_state, power_w,
-                         wavelength_rule="max", snr_margin_db=0.0):
+                         wavelength_rule="max", snr_margin_db=0.0, *, route_rule="first"):
+        """Allocate in order; widest_bottleneck only breaks ties in feasible distance."""
         if wavelength_rule not in ("min", "max"):
             raise ValueError("wavelength_rule must be 'min' or 'max'.")
+        if route_rule not in ("first", "widest_bottleneck"):
+            raise ValueError("Unknown sequential route rule.")
         state = self._copy_state(initial_state)
         plan = []
         for request in requests:
@@ -151,10 +154,17 @@ class OpticalNetwork:
             if not options:
                 plan.append(None)
                 continue
-            # 先选第一条可行路径，再在该路径上选择波长
-            first_route_options = [o for o in options if o.route == options[0].route]
+            route = options[0].route
+            if route_rule == "widest_bottleneck":
+                # Candidates arrive in distance order. Stable max keeps their original
+                # order when equally short feasible routes have the same bottleneck.
+                shortest = self.route_length_km(route)
+                tied = (path for path in dict.fromkeys(o.route for o in options)
+                        if self.route_length_km(path) == shortest)
+                route = max(tied, key=lambda path: min(len(state[edge_key(u, v)])
+                                                       for u, v in zip(path, path[1:])))
             choose = min if wavelength_rule == "min" else max
-            chosen = choose(first_route_options, key=lambda o: o.wavelength)
+            chosen = choose((o for o in options if o.route == route), key=lambda o: o.wavelength)
             for edge, wavelength in chosen.resources:
                 state[edge].remove(wavelength)
             plan.append(chosen)

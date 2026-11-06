@@ -1,0 +1,4193 @@
+{
+  "fixed_comparison": "Same OD, order, offered traffic, route sets, wave budget and conversion eligibility",
+  "mixed_fraction": {
+    "50": 0.25,
+    "100": 0.5,
+    "150": 0.25
+  },
+  "grooming": false,
+  "source32_sha256": "d63caf254e76977b9045e7fee7e00d6faf293119766ab7a4238fca89af22f54a",
+  "source34_sha256": "1a703d9b6743868624421fbb48940c57417f090a71aeb160bd371af91052357b",
+  "source35_sha256": "9473e4201b63fe3faeff77f5f2144d9d85822113783c6a07a5bc2612db9e7cae",
+  "source33_sha256": "ea72c7a32288b5e08c61dbf5a193c4edc39b3dfcf005194c2cc729c56597ceb7",
+  "route_count": 264,
+  "min_net_rate_gbps": 160.0,
+  "sweep_pairs": 1800,
+  "conversion_records": 720,
+  "sweep": [
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.16666666666666666,
+      "n_seeds": 40,
+      "mean_offered_f": 3.525,
+      "mean_gain_gbps": 2.5,
+      "gain_sd_gbps": 15.811388300841896,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 1,
+      "ties": 39,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.975,
+        "admitted_traffic_gbps": 2397.5,
+        "request_blocking_fraction": 0.0010416666666666667,
+        "accepted_hotspot_endpoints": 3.525,
+        "accepted_hotspot_transits": 6.275,
+        "used_incident_resources": 16.075
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 3.525,
+        "accepted_hotspot_transits": 5.825,
+        "used_incident_resources": 15.175
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.25,
+      "n_seeds": 40,
+      "mean_offered_f": 6.15,
+      "mean_gain_gbps": 1.25,
+      "gain_sd_gbps": 7.905694150420948,
+      "mean_gain_vs_uniform_gbps": -1.25,
+      "gain_vs_uniform_sd_gbps": 17.85805858457902,
+      "wins": 1,
+      "ties": 39,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.975,
+        "admitted_traffic_gbps": 2398.75,
+        "request_blocking_fraction": 0.0010416666666666667,
+        "accepted_hotspot_endpoints": 6.15,
+        "accepted_hotspot_transits": 5.075,
+        "used_incident_resources": 16.3
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 6.15,
+        "accepted_hotspot_transits": 4.55,
+        "used_incident_resources": 15.25
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.35,
+      "n_seeds": 40,
+      "mean_offered_f": 8.3,
+      "mean_gain_gbps": 1.25,
+      "gain_sd_gbps": 7.905694150420948,
+      "mean_gain_vs_uniform_gbps": -1.25,
+      "gain_vs_uniform_sd_gbps": 17.85805858457902,
+      "wins": 1,
+      "ties": 39,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.975,
+        "admitted_traffic_gbps": 2398.75,
+        "request_blocking_fraction": 0.0010416666666666667,
+        "accepted_hotspot_endpoints": 8.3,
+        "accepted_hotspot_transits": 4.65,
+        "used_incident_resources": 17.6
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 8.3,
+        "accepted_hotspot_transits": 3.525,
+        "used_incident_resources": 15.35
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.45,
+      "n_seeds": 40,
+      "mean_offered_f": 11.275,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": -2.5,
+      "gain_vs_uniform_sd_gbps": 15.811388300841896,
+      "wins": 0,
+      "ties": 40,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 11.275,
+        "accepted_hotspot_transits": 3.925,
+        "used_incident_resources": 19.125
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 11.275,
+        "accepted_hotspot_transits": 2.85,
+        "used_incident_resources": 16.975
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.55,
+      "n_seeds": 40,
+      "mean_offered_f": 13.075,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": -2.5,
+      "gain_vs_uniform_sd_gbps": 15.811388300841896,
+      "wins": 0,
+      "ties": 40,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 13.075,
+        "accepted_hotspot_transits": 3.175,
+        "used_incident_resources": 19.425
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 13.075,
+        "accepted_hotspot_transits": 2.175,
+        "used_incident_resources": 17.425
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.65,
+      "n_seeds": 40,
+      "mean_offered_f": 15.2,
+      "mean_gain_gbps": 5.0,
+      "gain_sd_gbps": 22.072142786315226,
+      "mean_gain_vs_uniform_gbps": 2.5,
+      "gain_vs_uniform_sd_gbps": 27.61920550668525,
+      "wins": 2,
+      "ties": 38,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.95,
+        "admitted_traffic_gbps": 2395.0,
+        "request_blocking_fraction": 0.0020833333333333333,
+        "accepted_hotspot_endpoints": 15.175,
+        "accepted_hotspot_transits": 2.625,
+        "used_incident_resources": 20.425
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 15.2,
+        "accepted_hotspot_transits": 1.5,
+        "used_incident_resources": 18.2
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.75,
+      "n_seeds": 40,
+      "mean_offered_f": 17.5,
+      "mean_gain_gbps": 5.0,
+      "gain_sd_gbps": 24.806946917841692,
+      "mean_gain_vs_uniform_gbps": 2.5,
+      "gain_vs_uniform_sd_gbps": 29.850052613448458,
+      "wins": 2,
+      "ties": 38,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.95,
+        "admitted_traffic_gbps": 2395.0,
+        "request_blocking_fraction": 0.0020833333333333333,
+        "accepted_hotspot_endpoints": 17.45,
+        "accepted_hotspot_transits": 2.05,
+        "used_incident_resources": 21.55
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 17.5,
+        "accepted_hotspot_transits": 0.85,
+        "used_incident_resources": 19.2
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 0.85,
+      "n_seeds": 40,
+      "mean_offered_f": 20.575,
+      "mean_gain_gbps": 11.25,
+      "gain_sd_gbps": 34.87615451631894,
+      "mean_gain_vs_uniform_gbps": 8.75,
+      "gain_vs_uniform_sd_gbps": 39.03893519985479,
+      "wins": 4,
+      "ties": 36,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.9,
+        "admitted_traffic_gbps": 2388.75,
+        "request_blocking_fraction": 0.004166666666666667,
+        "accepted_hotspot_endpoints": 20.475,
+        "accepted_hotspot_transits": 0.725,
+        "used_incident_resources": 21.925
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 20.575,
+        "accepted_hotspot_transits": 0.35,
+        "used_incident_resources": 21.275
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 24,
+      "share": 1.0,
+      "n_seeds": 40,
+      "mean_offered_f": 24,
+      "mean_gain_gbps": 27.5,
+      "gain_sd_gbps": 53.04811555656397,
+      "mean_gain_vs_uniform_gbps": 25.0,
+      "gain_vs_uniform_sd_gbps": 56.613851707229784,
+      "wins": 9,
+      "ties": 31,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.725,
+        "admitted_traffic_gbps": 2372.5,
+        "request_blocking_fraction": 0.011458333333333333,
+        "accepted_hotspot_endpoints": 23.725,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 23.725
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 24,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 24
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.16666666666666666,
+      "n_seeds": 40,
+      "mean_offered_f": 7.475,
+      "mean_gain_gbps": 167.5,
+      "gain_sd_gbps": 173.77778324261692,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 33,
+      "ties": 1,
+      "losses": 6,
+      "baseline": {
+        "accepted_count": 40.825,
+        "admitted_traffic_gbps": 4091.25,
+        "request_blocking_fraction": 0.14947916666666666,
+        "accepted_hotspot_endpoints": 6.3,
+        "accepted_hotspot_transits": 9.7,
+        "used_incident_resources": 25.7
+      },
+      "online": {
+        "accepted_count": 42.5,
+        "admitted_traffic_gbps": 4258.75,
+        "request_blocking_fraction": 0.11458333333333333,
+        "accepted_hotspot_endpoints": 6.5,
+        "accepted_hotspot_transits": 9.675,
+        "used_incident_resources": 25.85
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.25,
+      "n_seeds": 40,
+      "mean_offered_f": 12.575,
+      "mean_gain_gbps": 117.5,
+      "gain_sd_gbps": 146.563191937025,
+      "mean_gain_vs_uniform_gbps": -50.0,
+      "gain_vs_uniform_sd_gbps": 204.43794118233484,
+      "wins": 29,
+      "ties": 4,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 41.625,
+        "admitted_traffic_gbps": 4165.0,
+        "request_blocking_fraction": 0.1328125,
+        "accepted_hotspot_endpoints": 11.05,
+        "accepted_hotspot_transits": 7.875,
+        "used_incident_resources": 26.8
+      },
+      "online": {
+        "accepted_count": 42.85,
+        "admitted_traffic_gbps": 4282.5,
+        "request_blocking_fraction": 0.10729166666666666,
+        "accepted_hotspot_endpoints": 11.325,
+        "accepted_hotspot_transits": 7.35,
+        "used_incident_resources": 26.025
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.35,
+      "n_seeds": 40,
+      "mean_offered_f": 16.925,
+      "mean_gain_gbps": 152.5,
+      "gain_sd_gbps": 188.43144710055765,
+      "mean_gain_vs_uniform_gbps": -15.0,
+      "gain_vs_uniform_sd_gbps": 238.90777106850894,
+      "wins": 30,
+      "ties": 5,
+      "losses": 5,
+      "baseline": {
+        "accepted_count": 41.6,
+        "admitted_traffic_gbps": 4170.0,
+        "request_blocking_fraction": 0.13333333333333333,
+        "accepted_hotspot_endpoints": 14.475,
+        "accepted_hotspot_transits": 6.675,
+        "used_incident_resources": 27.825
+      },
+      "online": {
+        "accepted_count": 43.15,
+        "admitted_traffic_gbps": 4322.5,
+        "request_blocking_fraction": 0.10104166666666667,
+        "accepted_hotspot_endpoints": 15.2,
+        "accepted_hotspot_transits": 5.925,
+        "used_incident_resources": 27.05
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.45,
+      "n_seeds": 40,
+      "mean_offered_f": 21.975,
+      "mean_gain_gbps": 141.25,
+      "gain_sd_gbps": 175.735633326064,
+      "mean_gain_vs_uniform_gbps": -26.25,
+      "gain_vs_uniform_sd_gbps": 230.65889456300107,
+      "wins": 28,
+      "ties": 3,
+      "losses": 9,
+      "baseline": {
+        "accepted_count": 40.8,
+        "admitted_traffic_gbps": 4107.5,
+        "request_blocking_fraction": 0.15,
+        "accepted_hotspot_endpoints": 18.25,
+        "accepted_hotspot_transits": 5.45,
+        "used_incident_resources": 29.15
+      },
+      "online": {
+        "accepted_count": 42.425,
+        "admitted_traffic_gbps": 4248.75,
+        "request_blocking_fraction": 0.11614583333333334,
+        "accepted_hotspot_endpoints": 19.475,
+        "accepted_hotspot_transits": 4.325,
+        "used_incident_resources": 28.125
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.55,
+      "n_seeds": 40,
+      "mean_offered_f": 26.15,
+      "mean_gain_gbps": 228.75,
+      "gain_sd_gbps": 215.0991125159009,
+      "mean_gain_vs_uniform_gbps": 61.25,
+      "gain_vs_uniform_sd_gbps": 237.09986536024468,
+      "wins": 32,
+      "ties": 3,
+      "losses": 5,
+      "baseline": {
+        "accepted_count": 40.6,
+        "admitted_traffic_gbps": 4046.25,
+        "request_blocking_fraction": 0.15416666666666667,
+        "accepted_hotspot_endpoints": 21.625,
+        "accepted_hotspot_transits": 4.175,
+        "used_incident_resources": 29.975
+      },
+      "online": {
+        "accepted_count": 42.85,
+        "admitted_traffic_gbps": 4275.0,
+        "request_blocking_fraction": 0.10729166666666666,
+        "accepted_hotspot_endpoints": 23.225,
+        "accepted_hotspot_transits": 3.025,
+        "used_incident_resources": 29.275
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.65,
+      "n_seeds": 40,
+      "mean_offered_f": 31.175,
+      "mean_gain_gbps": 218.75,
+      "gain_sd_gbps": 188.3421259576742,
+      "mean_gain_vs_uniform_gbps": 51.25,
+      "gain_vs_uniform_sd_gbps": 268.7786955461448,
+      "wins": 34,
+      "ties": 3,
+      "losses": 3,
+      "baseline": {
+        "accepted_count": 39.35,
+        "admitted_traffic_gbps": 3952.5,
+        "request_blocking_fraction": 0.18020833333333333,
+        "accepted_hotspot_endpoints": 24.325,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 30.525
+      },
+      "online": {
+        "accepted_count": 41.55,
+        "admitted_traffic_gbps": 4171.25,
+        "request_blocking_fraction": 0.134375,
+        "accepted_hotspot_endpoints": 26.325,
+        "accepted_hotspot_transits": 1.925,
+        "used_incident_resources": 30.175
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.75,
+      "n_seeds": 40,
+      "mean_offered_f": 35.95,
+      "mean_gain_gbps": 247.5,
+      "gain_sd_gbps": 191.4686825834878,
+      "mean_gain_vs_uniform_gbps": 80.0,
+      "gain_vs_uniform_sd_gbps": 275.2155332527395,
+      "wins": 33,
+      "ties": 5,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 37.725,
+        "admitted_traffic_gbps": 3802.5,
+        "request_blocking_fraction": 0.2140625,
+        "accepted_hotspot_endpoints": 26.85,
+        "accepted_hotspot_transits": 2.275,
+        "used_incident_resources": 31.4
+      },
+      "online": {
+        "accepted_count": 40.2,
+        "admitted_traffic_gbps": 4050.0,
+        "request_blocking_fraction": 0.1625,
+        "accepted_hotspot_endpoints": 29.275,
+        "accepted_hotspot_transits": 1.025,
+        "used_incident_resources": 31.325
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 0.85,
+      "n_seeds": 40,
+      "mean_offered_f": 41.325,
+      "mean_gain_gbps": 90.0,
+      "gain_sd_gbps": 177.6628902278204,
+      "mean_gain_vs_uniform_gbps": -77.5,
+      "gain_vs_uniform_sd_gbps": 260.657452784891,
+      "wins": 22,
+      "ties": 7,
+      "losses": 11,
+      "baseline": {
+        "accepted_count": 36.45,
+        "admitted_traffic_gbps": 3681.25,
+        "request_blocking_fraction": 0.240625,
+        "accepted_hotspot_endpoints": 30.3,
+        "accepted_hotspot_transits": 0.775,
+        "used_incident_resources": 31.85
+      },
+      "online": {
+        "accepted_count": 37.375,
+        "admitted_traffic_gbps": 3771.25,
+        "request_blocking_fraction": 0.22135416666666666,
+        "accepted_hotspot_endpoints": 31.025,
+        "accepted_hotspot_transits": 0.4,
+        "used_incident_resources": 31.825
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 48,
+      "share": 1.0,
+      "n_seeds": 40,
+      "mean_offered_f": 48,
+      "mean_gain_gbps": -3.75,
+      "gain_sd_gbps": 70.15322058875387,
+      "mean_gain_vs_uniform_gbps": -171.25,
+      "gain_vs_uniform_sd_gbps": 201.56041914052116,
+      "wins": 14,
+      "ties": 12,
+      "losses": 14,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3235.0,
+        "request_blocking_fraction": 0.3333333333333333,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 31.975,
+        "admitted_traffic_gbps": 3231.25,
+        "request_blocking_fraction": 0.3338541666666667,
+        "accepted_hotspot_endpoints": 31.975,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 31.975
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.16666666666666666,
+      "n_seeds": 40,
+      "mean_offered_f": 11.525,
+      "mean_gain_gbps": 131.25,
+      "gain_sd_gbps": 243.8177913619418,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 29,
+      "ties": 2,
+      "losses": 9,
+      "baseline": {
+        "accepted_count": 49.675,
+        "admitted_traffic_gbps": 4958.75,
+        "request_blocking_fraction": 0.31006944444444445,
+        "accepted_hotspot_endpoints": 7.75,
+        "accepted_hotspot_transits": 10.15,
+        "used_incident_resources": 28.05
+      },
+      "online": {
+        "accepted_count": 50.975,
+        "admitted_traffic_gbps": 5090.0,
+        "request_blocking_fraction": 0.2920138888888889,
+        "accepted_hotspot_endpoints": 7.975,
+        "accepted_hotspot_transits": 10.2,
+        "used_incident_resources": 28.375
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.25,
+      "n_seeds": 40,
+      "mean_offered_f": 18.775,
+      "mean_gain_gbps": 98.75,
+      "gain_sd_gbps": 187.93326011222777,
+      "mean_gain_vs_uniform_gbps": -32.5,
+      "gain_vs_uniform_sd_gbps": 297.54336033938193,
+      "wins": 28,
+      "ties": 2,
+      "losses": 10,
+      "baseline": {
+        "accepted_count": 51.025,
+        "admitted_traffic_gbps": 5141.25,
+        "request_blocking_fraction": 0.29131944444444446,
+        "accepted_hotspot_endpoints": 12.975,
+        "accepted_hotspot_transits": 8.075,
+        "used_incident_resources": 29.125
+      },
+      "online": {
+        "accepted_count": 52.25,
+        "admitted_traffic_gbps": 5240.0,
+        "request_blocking_fraction": 0.2743055555555556,
+        "accepted_hotspot_endpoints": 13.45,
+        "accepted_hotspot_transits": 7.675,
+        "used_incident_resources": 28.8
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.35,
+      "n_seeds": 40,
+      "mean_offered_f": 25.65,
+      "mean_gain_gbps": 107.5,
+      "gain_sd_gbps": 185.55184499079274,
+      "mean_gain_vs_uniform_gbps": -23.75,
+      "gain_vs_uniform_sd_gbps": 288.4502134529036,
+      "wins": 27,
+      "ties": 2,
+      "losses": 11,
+      "baseline": {
+        "accepted_count": 50.175,
+        "admitted_traffic_gbps": 5037.5,
+        "request_blocking_fraction": 0.303125,
+        "accepted_hotspot_endpoints": 16.8,
+        "accepted_hotspot_transits": 6.775,
+        "used_incident_resources": 30.35
+      },
+      "online": {
+        "accepted_count": 51.525,
+        "admitted_traffic_gbps": 5145.0,
+        "request_blocking_fraction": 0.284375,
+        "accepted_hotspot_endpoints": 17.475,
+        "accepted_hotspot_transits": 6.05,
+        "used_incident_resources": 29.575
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.45,
+      "n_seeds": 40,
+      "mean_offered_f": 33,
+      "mean_gain_gbps": 185.0,
+      "gain_sd_gbps": 257.75161965717587,
+      "mean_gain_vs_uniform_gbps": 53.75,
+      "gain_vs_uniform_sd_gbps": 348.5110269380811,
+      "wins": 30,
+      "ties": 3,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 49.225,
+        "admitted_traffic_gbps": 4935.0,
+        "request_blocking_fraction": 0.31631944444444443,
+        "accepted_hotspot_endpoints": 20.4,
+        "accepted_hotspot_transits": 5.5,
+        "used_incident_resources": 31.4
+      },
+      "online": {
+        "accepted_count": 51.075,
+        "admitted_traffic_gbps": 5120.0,
+        "request_blocking_fraction": 0.290625,
+        "accepted_hotspot_endpoints": 22.1,
+        "accepted_hotspot_transits": 4.325,
+        "used_incident_resources": 30.75
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.55,
+      "n_seeds": 40,
+      "mean_offered_f": 39.75,
+      "mean_gain_gbps": 230.0,
+      "gain_sd_gbps": 249.0494750559435,
+      "mean_gain_vs_uniform_gbps": 98.75,
+      "gain_vs_uniform_sd_gbps": 340.52890611141356,
+      "wins": 31,
+      "ties": 4,
+      "losses": 5,
+      "baseline": {
+        "accepted_count": 47.275,
+        "admitted_traffic_gbps": 4707.5,
+        "request_blocking_fraction": 0.3434027777777778,
+        "accepted_hotspot_endpoints": 23.1,
+        "accepted_hotspot_transits": 4.2,
+        "used_incident_resources": 31.5
+      },
+      "online": {
+        "accepted_count": 49.425,
+        "admitted_traffic_gbps": 4937.5,
+        "request_blocking_fraction": 0.31354166666666666,
+        "accepted_hotspot_endpoints": 25.1,
+        "accepted_hotspot_transits": 3.05,
+        "used_incident_resources": 31.2
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.65,
+      "n_seeds": 40,
+      "mean_offered_f": 46.775,
+      "mean_gain_gbps": 246.25,
+      "gain_sd_gbps": 253.02971853428298,
+      "mean_gain_vs_uniform_gbps": 115.0,
+      "gain_vs_uniform_sd_gbps": 373.6857311177745,
+      "wins": 32,
+      "ties": 1,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 45.075,
+        "admitted_traffic_gbps": 4505.0,
+        "request_blocking_fraction": 0.37395833333333334,
+        "accepted_hotspot_endpoints": 25.5,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 31.7
+      },
+      "online": {
+        "accepted_count": 47.5,
+        "admitted_traffic_gbps": 4751.25,
+        "request_blocking_fraction": 0.3402777777777778,
+        "accepted_hotspot_endpoints": 27.8,
+        "accepted_hotspot_transits": 1.925,
+        "used_incident_resources": 31.65
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.75,
+      "n_seeds": 40,
+      "mean_offered_f": 53.525,
+      "mean_gain_gbps": 231.25,
+      "gain_sd_gbps": 210.82484527354782,
+      "mean_gain_vs_uniform_gbps": 100.0,
+      "gain_vs_uniform_sd_gbps": 319.25393799149435,
+      "wins": 31,
+      "ties": 5,
+      "losses": 4,
+      "baseline": {
+        "accepted_count": 42.125,
+        "admitted_traffic_gbps": 4221.25,
+        "request_blocking_fraction": 0.4149305555555556,
+        "accepted_hotspot_endpoints": 27.425,
+        "accepted_hotspot_transits": 2.275,
+        "used_incident_resources": 31.975
+      },
+      "online": {
+        "accepted_count": 44.3,
+        "admitted_traffic_gbps": 4452.5,
+        "request_blocking_fraction": 0.38472222222222224,
+        "accepted_hotspot_endpoints": 29.875,
+        "accepted_hotspot_transits": 1.025,
+        "used_incident_resources": 31.925
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 0.85,
+      "n_seeds": 40,
+      "mean_offered_f": 61.75,
+      "mean_gain_gbps": 106.25,
+      "gain_sd_gbps": 179.4534079950159,
+      "mean_gain_vs_uniform_gbps": -25.0,
+      "gain_vs_uniform_sd_gbps": 306.3431961806135,
+      "wins": 27,
+      "ties": 3,
+      "losses": 10,
+      "baseline": {
+        "accepted_count": 39.05,
+        "admitted_traffic_gbps": 3937.5,
+        "request_blocking_fraction": 0.4576388888888889,
+        "accepted_hotspot_endpoints": 30.45,
+        "accepted_hotspot_transits": 0.775,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 40.125,
+        "admitted_traffic_gbps": 4043.75,
+        "request_blocking_fraction": 0.4427083333333333,
+        "accepted_hotspot_endpoints": 31.2,
+        "accepted_hotspot_transits": 0.4,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 72,
+      "share": 1.0,
+      "n_seeds": 40,
+      "mean_offered_f": 72,
+      "mean_gain_gbps": 10.0,
+      "gain_sd_gbps": 76.12405529707279,
+      "mean_gain_vs_uniform_gbps": -121.25,
+      "gain_vs_uniform_sd_gbps": 241.227496625499,
+      "wins": 13,
+      "ties": 15,
+      "losses": 12,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3226.25,
+        "request_blocking_fraction": 0.5555555555555556,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3236.25,
+        "request_blocking_fraction": 0.5555555555555556,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.16666666666666666,
+      "n_seeds": 40,
+      "mean_offered_f": 15.75,
+      "mean_gain_gbps": 86.25,
+      "gain_sd_gbps": 195.4572220231978,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 21,
+      "ties": 7,
+      "losses": 12,
+      "baseline": {
+        "accepted_count": 55.725,
+        "admitted_traffic_gbps": 5622.5,
+        "request_blocking_fraction": 0.41953125,
+        "accepted_hotspot_endpoints": 8.825,
+        "accepted_hotspot_transits": 10.275,
+        "used_incident_resources": 29.375
+      },
+      "online": {
+        "accepted_count": 56.475,
+        "admitted_traffic_gbps": 5708.75,
+        "request_blocking_fraction": 0.41171875,
+        "accepted_hotspot_endpoints": 8.925,
+        "accepted_hotspot_transits": 10.35,
+        "used_incident_resources": 29.625
+      },
+      "gain_simultaneous95_gbps": [
+        -11.806075239784917,
+        184.30607523978492
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.25,
+      "n_seeds": 40,
+      "mean_offered_f": 25.475,
+      "mean_gain_gbps": 110.0,
+      "gain_sd_gbps": 216.08402923933943,
+      "mean_gain_vs_uniform_gbps": 23.75,
+      "gain_vs_uniform_sd_gbps": 269.6121383176305,
+      "wins": 27,
+      "ties": 2,
+      "losses": 11,
+      "baseline": {
+        "accepted_count": 56.175,
+        "admitted_traffic_gbps": 5652.5,
+        "request_blocking_fraction": 0.41484375,
+        "accepted_hotspot_endpoints": 13.95,
+        "accepted_hotspot_transits": 8.1,
+        "used_incident_resources": 30.15
+      },
+      "online": {
+        "accepted_count": 57.125,
+        "admitted_traffic_gbps": 5762.5,
+        "request_blocking_fraction": 0.4049479166666667,
+        "accepted_hotspot_endpoints": 14.575,
+        "accepted_hotspot_transits": 7.725,
+        "used_incident_resources": 30.025
+      },
+      "gain_simultaneous95_gbps": [
+        1.5959635060513904,
+        218.4040364939486
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -111.50777071207526,
+        159.00777071207526
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.35,
+      "n_seeds": 40,
+      "mean_offered_f": 34.25,
+      "mean_gain_gbps": 185.0,
+      "gain_sd_gbps": 225.66142098966967,
+      "mean_gain_vs_uniform_gbps": 98.75,
+      "gain_vs_uniform_sd_gbps": 307.48931605371183,
+      "wins": 30,
+      "ties": 3,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 55.775,
+        "admitted_traffic_gbps": 5581.25,
+        "request_blocking_fraction": 0.41901041666666666,
+        "accepted_hotspot_endpoints": 17.525,
+        "accepted_hotspot_transits": 6.775,
+        "used_incident_resources": 31.075
+      },
+      "online": {
+        "accepted_count": 57.325,
+        "admitted_traffic_gbps": 5766.25,
+        "request_blocking_fraction": 0.40286458333333336,
+        "accepted_hotspot_endpoints": 18.575,
+        "accepted_hotspot_transits": 6.075,
+        "used_incident_resources": 30.725
+      },
+      "gain_simultaneous95_gbps": [
+        71.79122190402546,
+        298.20877809597454
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -55.50981807320622,
+        253.00981807320622
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.45,
+      "n_seeds": 40,
+      "mean_offered_f": 43.85,
+      "mean_gain_gbps": 218.75,
+      "gain_sd_gbps": 269.0647381827157,
+      "mean_gain_vs_uniform_gbps": 132.5,
+      "gain_vs_uniform_sd_gbps": 344.09859946510414,
+      "wins": 30,
+      "ties": 2,
+      "losses": 8,
+      "baseline": {
+        "accepted_count": 54.475,
+        "admitted_traffic_gbps": 5460.0,
+        "request_blocking_fraction": 0.43255208333333334,
+        "accepted_hotspot_endpoints": 20.625,
+        "accepted_hotspot_transits": 5.5,
+        "used_incident_resources": 31.625
+      },
+      "online": {
+        "accepted_count": 56.525,
+        "admitted_traffic_gbps": 5678.75,
+        "request_blocking_fraction": 0.41119791666666666,
+        "accepted_hotspot_endpoints": 22.7,
+        "accepted_hotspot_transits": 4.325,
+        "used_incident_resources": 31.35
+      },
+      "gain_simultaneous95_gbps": [
+        83.76684645612079,
+        353.7331535438792
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -40.12579407298813,
+        305.1257940729881
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.55,
+      "n_seeds": 40,
+      "mean_offered_f": 53.325,
+      "mean_gain_gbps": 182.5,
+      "gain_sd_gbps": 246.9168862551703,
+      "mean_gain_vs_uniform_gbps": 96.25,
+      "gain_vs_uniform_sd_gbps": 341.2622684936556,
+      "wins": 29,
+      "ties": 3,
+      "losses": 8,
+      "baseline": {
+        "accepted_count": 51.525,
+        "admitted_traffic_gbps": 5180.0,
+        "request_blocking_fraction": 0.46328125,
+        "accepted_hotspot_endpoints": 23.4,
+        "accepted_hotspot_transits": 4.2,
+        "used_incident_resources": 31.8
+      },
+      "online": {
+        "accepted_count": 53.475,
+        "admitted_traffic_gbps": 5362.5,
+        "request_blocking_fraction": 0.44296875,
+        "accepted_hotspot_endpoints": 25.625,
+        "accepted_hotspot_transits": 3.05,
+        "used_incident_resources": 31.725
+      },
+      "gain_simultaneous95_gbps": [
+        58.62787838692995,
+        306.37212161307
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -74.95287666803145,
+        267.4528766680314
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.65,
+      "n_seeds": 40,
+      "mean_offered_f": 62.575,
+      "mean_gain_gbps": 225.0,
+      "gain_sd_gbps": 242.582262018792,
+      "mean_gain_vs_uniform_gbps": 138.75,
+      "gain_vs_uniform_sd_gbps": 322.5474522831625,
+      "wins": 32,
+      "ties": 1,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 49.15,
+        "admitted_traffic_gbps": 4948.75,
+        "request_blocking_fraction": 0.48802083333333335,
+        "accepted_hotspot_endpoints": 25.8,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 51.4,
+        "admitted_traffic_gbps": 5173.75,
+        "request_blocking_fraction": 0.46458333333333335,
+        "accepted_hotspot_endpoints": 28.15,
+        "accepted_hotspot_transits": 1.925,
+        "used_incident_resources": 32
+      },
+      "gain_simultaneous95_gbps": [
+        103.30245262808057,
+        346.6975473719194
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -23.064114219453018,
+        300.564114219453
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.75,
+      "n_seeds": 40,
+      "mean_offered_f": 71.525,
+      "mean_gain_gbps": 175.0,
+      "gain_sd_gbps": 248.0694691784169,
+      "mean_gain_vs_uniform_gbps": 88.75,
+      "gain_vs_uniform_sd_gbps": 329.8188119527883,
+      "wins": 25,
+      "ties": 3,
+      "losses": 12,
+      "baseline": {
+        "accepted_count": 45.125,
+        "admitted_traffic_gbps": 4536.25,
+        "request_blocking_fraction": 0.5299479166666666,
+        "accepted_hotspot_endpoints": 27.45,
+        "accepted_hotspot_transits": 2.275,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 47.1,
+        "admitted_traffic_gbps": 4711.25,
+        "request_blocking_fraction": 0.509375,
+        "accepted_hotspot_endpoints": 29.925,
+        "accepted_hotspot_transits": 1.025,
+        "used_incident_resources": 31.975
+      },
+      "gain_simultaneous95_gbps": [
+        50.54965591619131,
+        299.45034408380866
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -76.71197631162855,
+        254.21197631162855
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 0.85,
+      "n_seeds": 40,
+      "mean_offered_f": 82.375,
+      "mean_gain_gbps": 120.0,
+      "gain_sd_gbps": 199.93588715975673,
+      "mean_gain_vs_uniform_gbps": 33.75,
+      "gain_vs_uniform_sd_gbps": 284.51206544646817,
+      "wins": 27,
+      "ties": 6,
+      "losses": 7,
+      "baseline": {
+        "accepted_count": 41.1,
+        "admitted_traffic_gbps": 4126.25,
+        "request_blocking_fraction": 0.571875,
+        "accepted_hotspot_endpoints": 30.45,
+        "accepted_hotspot_transits": 0.775,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 42.2,
+        "admitted_traffic_gbps": 4246.25,
+        "request_blocking_fraction": 0.5604166666666667,
+        "accepted_hotspot_endpoints": 31.2,
+        "accepted_hotspot_transits": 0.4,
+        "used_incident_resources": 32
+      },
+      "gain_simultaneous95_gbps": [
+        19.697088746388474,
+        220.3029112536115
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -108.98269724837493,
+        176.48269724837493
+      ]
+    },
+    {
+      "cohort": "new",
+      "request_count": 96,
+      "share": 1.0,
+      "n_seeds": 40,
+      "mean_offered_f": 96,
+      "mean_gain_gbps": 3.75,
+      "gain_sd_gbps": 69.2334401194194,
+      "mean_gain_vs_uniform_gbps": -82.5,
+      "gain_vs_uniform_sd_gbps": 217.66535123488333,
+      "wins": 12,
+      "ties": 16,
+      "losses": 12,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3217.5,
+        "request_blocking_fraction": 0.6666666666666666,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3221.25,
+        "request_blocking_fraction": 0.6666666666666666,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "gain_simultaneous95_gbps": [
+        -30.982712064500788,
+        38.48271206450079
+      ],
+      "gain_vs_uniform_simultaneous95_gbps": [
+        -191.69734679974522,
+        26.697346799745233
+      ]
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.16666666666666666,
+      "n_seeds": 10,
+      "mean_offered_f": 2.4,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 2.4,
+        "accepted_hotspot_transits": 6.8,
+        "used_incident_resources": 16
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 2.4,
+        "accepted_hotspot_transits": 5.9,
+        "used_incident_resources": 14.2
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.25,
+      "n_seeds": 10,
+      "mean_offered_f": 4.2,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 4.2,
+        "accepted_hotspot_transits": 5.6,
+        "used_incident_resources": 15.4
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 4.2,
+        "accepted_hotspot_transits": 5,
+        "used_incident_resources": 14.2
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.35,
+      "n_seeds": 10,
+      "mean_offered_f": 8.8,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 8.8,
+        "accepted_hotspot_transits": 4.3,
+        "used_incident_resources": 17.4
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 8.8,
+        "accepted_hotspot_transits": 3.6,
+        "used_incident_resources": 16
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.45,
+      "n_seeds": 10,
+      "mean_offered_f": 12.2,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 12.2,
+        "accepted_hotspot_transits": 3.3,
+        "used_incident_resources": 18.8
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 12.2,
+        "accepted_hotspot_transits": 2.2,
+        "used_incident_resources": 16.6
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.55,
+      "n_seeds": 10,
+      "mean_offered_f": 14.1,
+      "mean_gain_gbps": 20.0,
+      "gain_sd_gbps": 63.245553203367585,
+      "mean_gain_vs_uniform_gbps": 20.0,
+      "gain_vs_uniform_sd_gbps": 63.245553203367585,
+      "wins": 1,
+      "ties": 9,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.8,
+        "admitted_traffic_gbps": 2380.0,
+        "request_blocking_fraction": 0.008333333333333333,
+        "accepted_hotspot_endpoints": 13.9,
+        "accepted_hotspot_transits": 2.5,
+        "used_incident_resources": 18.9
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 14.1,
+        "accepted_hotspot_transits": 1.6,
+        "used_incident_resources": 17.3
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.65,
+      "n_seeds": 10,
+      "mean_offered_f": 15.9,
+      "mean_gain_gbps": 10.0,
+      "gain_sd_gbps": 31.622776601683793,
+      "mean_gain_vs_uniform_gbps": 10.0,
+      "gain_vs_uniform_sd_gbps": 31.622776601683793,
+      "wins": 1,
+      "ties": 9,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.9,
+        "admitted_traffic_gbps": 2390.0,
+        "request_blocking_fraction": 0.004166666666666667,
+        "accepted_hotspot_endpoints": 15.8,
+        "accepted_hotspot_transits": 2,
+        "used_incident_resources": 19.8
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 15.9,
+        "accepted_hotspot_transits": 1.5,
+        "used_incident_resources": 18.9
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.75,
+      "n_seeds": 10,
+      "mean_offered_f": 17.7,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 17.7,
+        "accepted_hotspot_transits": 1.5,
+        "used_incident_resources": 20.7
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 17.7,
+        "accepted_hotspot_transits": 0.7,
+        "used_incident_resources": 19.1
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 0.85,
+      "n_seeds": 10,
+      "mean_offered_f": 19.8,
+      "mean_gain_gbps": 35.0,
+      "gain_sd_gbps": 81.81958472422384,
+      "mean_gain_vs_uniform_gbps": 35.0,
+      "gain_vs_uniform_sd_gbps": 81.81958472422384,
+      "wins": 2,
+      "ties": 8,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 23.7,
+        "admitted_traffic_gbps": 2365.0,
+        "request_blocking_fraction": 0.012499999999999999,
+        "accepted_hotspot_endpoints": 19.5,
+        "accepted_hotspot_transits": 0.9,
+        "used_incident_resources": 21.3
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 19.8,
+        "accepted_hotspot_transits": 0.1,
+        "used_incident_resources": 20
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 24,
+      "share": 1.0,
+      "n_seeds": 10,
+      "mean_offered_f": 24,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 0.0,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 24,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 24
+      },
+      "online": {
+        "accepted_count": 24,
+        "admitted_traffic_gbps": 2400.0,
+        "request_blocking_fraction": 0.0,
+        "accepted_hotspot_endpoints": 24,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 24
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.16666666666666666,
+      "n_seeds": 10,
+      "mean_offered_f": 7,
+      "mean_gain_gbps": 180.0,
+      "gain_sd_gbps": 220.10098692292237,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 7,
+      "ties": 1,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 42.7,
+        "admitted_traffic_gbps": 4265.0,
+        "request_blocking_fraction": 0.11041666666666666,
+        "accepted_hotspot_endpoints": 6.2,
+        "accepted_hotspot_transits": 10.2,
+        "used_incident_resources": 26.6
+      },
+      "online": {
+        "accepted_count": 44.5,
+        "admitted_traffic_gbps": 4445.0,
+        "request_blocking_fraction": 0.07291666666666667,
+        "accepted_hotspot_endpoints": 6.7,
+        "accepted_hotspot_transits": 9.8,
+        "used_incident_resources": 26.3
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.25,
+      "n_seeds": 10,
+      "mean_offered_f": 9.8,
+      "mean_gain_gbps": 85.0,
+      "gain_sd_gbps": 187.15709384839727,
+      "mean_gain_vs_uniform_gbps": -95.0,
+      "gain_vs_uniform_sd_gbps": 260.82135222749264,
+      "wins": 6,
+      "ties": 0,
+      "losses": 4,
+      "baseline": {
+        "accepted_count": 41.8,
+        "admitted_traffic_gbps": 4205.0,
+        "request_blocking_fraction": 0.12916666666666668,
+        "accepted_hotspot_endpoints": 8.3,
+        "accepted_hotspot_transits": 8.8,
+        "used_incident_resources": 25.9
+      },
+      "online": {
+        "accepted_count": 42.9,
+        "admitted_traffic_gbps": 4290.0,
+        "request_blocking_fraction": 0.10625,
+        "accepted_hotspot_endpoints": 8.7,
+        "accepted_hotspot_transits": 7.8,
+        "used_incident_resources": 24.3
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.35,
+      "n_seeds": 10,
+      "mean_offered_f": 16.9,
+      "mean_gain_gbps": 130.0,
+      "gain_sd_gbps": 143.75905768565215,
+      "mean_gain_vs_uniform_gbps": -50.0,
+      "gain_vs_uniform_sd_gbps": 302.76503540974915,
+      "wins": 7,
+      "ties": 2,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 41.4,
+        "admitted_traffic_gbps": 4120.0,
+        "request_blocking_fraction": 0.1375,
+        "accepted_hotspot_endpoints": 14.1,
+        "accepted_hotspot_transits": 6.7,
+        "used_incident_resources": 27.5
+      },
+      "online": {
+        "accepted_count": 42.7,
+        "admitted_traffic_gbps": 4250.0,
+        "request_blocking_fraction": 0.11041666666666666,
+        "accepted_hotspot_endpoints": 14.7,
+        "accepted_hotspot_transits": 5.8,
+        "used_incident_resources": 26.3
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.45,
+      "n_seeds": 10,
+      "mean_offered_f": 23.2,
+      "mean_gain_gbps": 155.0,
+      "gain_sd_gbps": 172.32076034083775,
+      "mean_gain_vs_uniform_gbps": -25.0,
+      "gain_vs_uniform_sd_gbps": 271.0575994548432,
+      "wins": 7,
+      "ties": 1,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 41.4,
+        "admitted_traffic_gbps": 4145.0,
+        "request_blocking_fraction": 0.1375,
+        "accepted_hotspot_endpoints": 19.5,
+        "accepted_hotspot_transits": 4.2,
+        "used_incident_resources": 27.9
+      },
+      "online": {
+        "accepted_count": 43.2,
+        "admitted_traffic_gbps": 4300.0,
+        "request_blocking_fraction": 0.1,
+        "accepted_hotspot_endpoints": 20.8,
+        "accepted_hotspot_transits": 3.4,
+        "used_incident_resources": 27.6
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.55,
+      "n_seeds": 10,
+      "mean_offered_f": 27.2,
+      "mean_gain_gbps": 295.0,
+      "gain_sd_gbps": 224.16511771459895,
+      "mean_gain_vs_uniform_gbps": 115.0,
+      "gain_vs_uniform_sd_gbps": 354.37738829295154,
+      "wins": 9,
+      "ties": 0,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 40.7,
+        "admitted_traffic_gbps": 4040.0,
+        "request_blocking_fraction": 0.15208333333333335,
+        "accepted_hotspot_endpoints": 22.7,
+        "accepted_hotspot_transits": 3.3,
+        "used_incident_resources": 29.3
+      },
+      "online": {
+        "accepted_count": 43.3,
+        "admitted_traffic_gbps": 4335.0,
+        "request_blocking_fraction": 0.09791666666666667,
+        "accepted_hotspot_endpoints": 24.5,
+        "accepted_hotspot_transits": 2.6,
+        "used_incident_resources": 29.7
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.65,
+      "n_seeds": 10,
+      "mean_offered_f": 31.1,
+      "mean_gain_gbps": 180.0,
+      "gain_sd_gbps": 108.52547064066471,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 210.81851067789196,
+      "wins": 10,
+      "ties": 0,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 39,
+        "admitted_traffic_gbps": 3870.0,
+        "request_blocking_fraction": 0.1875,
+        "accepted_hotspot_endpoints": 24.5,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 30.7
+      },
+      "online": {
+        "accepted_count": 40.8,
+        "admitted_traffic_gbps": 4050.0,
+        "request_blocking_fraction": 0.15,
+        "accepted_hotspot_endpoints": 25.6,
+        "accepted_hotspot_transits": 2.4,
+        "used_incident_resources": 30.4
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.75,
+      "n_seeds": 10,
+      "mean_offered_f": 34.8,
+      "mean_gain_gbps": 290.0,
+      "gain_sd_gbps": 273.6583433569839,
+      "mean_gain_vs_uniform_gbps": 110.0,
+      "gain_vs_uniform_sd_gbps": 379.18040268159666,
+      "wins": 8,
+      "ties": 1,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 38.2,
+        "admitted_traffic_gbps": 3810.0,
+        "request_blocking_fraction": 0.20416666666666666,
+        "accepted_hotspot_endpoints": 26.8,
+        "accepted_hotspot_transits": 2.3,
+        "used_incident_resources": 31.4
+      },
+      "online": {
+        "accepted_count": 41.1,
+        "admitted_traffic_gbps": 4100.0,
+        "request_blocking_fraction": 0.14375000000000002,
+        "accepted_hotspot_endpoints": 28.6,
+        "accepted_hotspot_transits": 1.3,
+        "used_incident_resources": 31.2
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 0.85,
+      "n_seeds": 10,
+      "mean_offered_f": 40.5,
+      "mean_gain_gbps": 135.0,
+      "gain_sd_gbps": 228.58258901324922,
+      "mean_gain_vs_uniform_gbps": -45.0,
+      "gain_vs_uniform_sd_gbps": 271.2624805116501,
+      "wins": 7,
+      "ties": 1,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 36.4,
+        "admitted_traffic_gbps": 3650.0,
+        "request_blocking_fraction": 0.24166666666666667,
+        "accepted_hotspot_endpoints": 29.6,
+        "accepted_hotspot_transits": 1,
+        "used_incident_resources": 31.6
+      },
+      "online": {
+        "accepted_count": 38,
+        "admitted_traffic_gbps": 3785.0,
+        "request_blocking_fraction": 0.20833333333333334,
+        "accepted_hotspot_endpoints": 31.2,
+        "accepted_hotspot_transits": 0.2,
+        "used_incident_resources": 31.6
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 48,
+      "share": 1.0,
+      "n_seeds": 10,
+      "mean_offered_f": 48,
+      "mean_gain_gbps": -15.0,
+      "gain_sd_gbps": 52.967495273569014,
+      "mean_gain_vs_uniform_gbps": -195.0,
+      "gain_vs_uniform_sd_gbps": 206.08789926199506,
+      "wins": 2,
+      "ties": 5,
+      "losses": 3,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3185.0,
+        "request_blocking_fraction": 0.3333333333333333,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3170.0,
+        "request_blocking_fraction": 0.3333333333333333,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.16666666666666666,
+      "n_seeds": 10,
+      "mean_offered_f": 10.1,
+      "mean_gain_gbps": 145.0,
+      "gain_sd_gbps": 149.9073788117924,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 8,
+      "ties": 1,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 52.2,
+        "admitted_traffic_gbps": 5185.0,
+        "request_blocking_fraction": 0.275,
+        "accepted_hotspot_endpoints": 7.6,
+        "accepted_hotspot_transits": 10.5,
+        "used_incident_resources": 28.6
+      },
+      "online": {
+        "accepted_count": 53.5,
+        "admitted_traffic_gbps": 5330.0,
+        "request_blocking_fraction": 0.2569444444444444,
+        "accepted_hotspot_endpoints": 8,
+        "accepted_hotspot_transits": 10.2,
+        "used_incident_resources": 28.4
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.25,
+      "n_seeds": 10,
+      "mean_offered_f": 15,
+      "mean_gain_gbps": 115.0,
+      "gain_sd_gbps": 197.2730763856707,
+      "mean_gain_vs_uniform_gbps": -30.0,
+      "gain_vs_uniform_sd_gbps": 163.6391694484477,
+      "wins": 5,
+      "ties": 2,
+      "losses": 3,
+      "baseline": {
+        "accepted_count": 49.6,
+        "admitted_traffic_gbps": 5025.0,
+        "request_blocking_fraction": 0.3111111111111111,
+        "accepted_hotspot_endpoints": 9.5,
+        "accepted_hotspot_transits": 9.3,
+        "used_incident_resources": 28.1
+      },
+      "online": {
+        "accepted_count": 51.4,
+        "admitted_traffic_gbps": 5140.0,
+        "request_blocking_fraction": 0.2861111111111111,
+        "accepted_hotspot_endpoints": 10.6,
+        "accepted_hotspot_transits": 8.3,
+        "used_incident_resources": 27.2
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.35,
+      "n_seeds": 10,
+      "mean_offered_f": 25.3,
+      "mean_gain_gbps": 120.0,
+      "gain_sd_gbps": 141.81364924121766,
+      "mean_gain_vs_uniform_gbps": -25.0,
+      "gain_vs_uniform_sd_gbps": 184.46619684315547,
+      "wins": 8,
+      "ties": 1,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 49.6,
+        "admitted_traffic_gbps": 5005.0,
+        "request_blocking_fraction": 0.3111111111111111,
+        "accepted_hotspot_endpoints": 16,
+        "accepted_hotspot_transits": 6.9,
+        "used_incident_resources": 29.8
+      },
+      "online": {
+        "accepted_count": 50.4,
+        "admitted_traffic_gbps": 5125.0,
+        "request_blocking_fraction": 0.3,
+        "accepted_hotspot_endpoints": 17.1,
+        "accepted_hotspot_transits": 6,
+        "used_incident_resources": 29.1
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.45,
+      "n_seeds": 10,
+      "mean_offered_f": 33.8,
+      "mean_gain_gbps": 70.0,
+      "gain_sd_gbps": 238.28088000882022,
+      "mean_gain_vs_uniform_gbps": -75.0,
+      "gain_vs_uniform_sd_gbps": 249.72206772952828,
+      "wins": 5,
+      "ties": 1,
+      "losses": 4,
+      "baseline": {
+        "accepted_count": 49.9,
+        "admitted_traffic_gbps": 5010.0,
+        "request_blocking_fraction": 0.30694444444444446,
+        "accepted_hotspot_endpoints": 22.1,
+        "accepted_hotspot_transits": 4.3,
+        "used_incident_resources": 30.7
+      },
+      "online": {
+        "accepted_count": 50.9,
+        "admitted_traffic_gbps": 5080.0,
+        "request_blocking_fraction": 0.29305555555555557,
+        "accepted_hotspot_endpoints": 23.3,
+        "accepted_hotspot_transits": 3.4,
+        "used_incident_resources": 30.1
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.55,
+      "n_seeds": 10,
+      "mean_offered_f": 41.4,
+      "mean_gain_gbps": 260.0,
+      "gain_sd_gbps": 202.48456731316588,
+      "mean_gain_vs_uniform_gbps": 115.0,
+      "gain_vs_uniform_sd_gbps": 270.8525634198634,
+      "wins": 9,
+      "ties": 0,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 46.8,
+        "admitted_traffic_gbps": 4700.0,
+        "request_blocking_fraction": 0.35,
+        "accepted_hotspot_endpoints": 24.4,
+        "accepted_hotspot_transits": 3.5,
+        "used_incident_resources": 31.4
+      },
+      "online": {
+        "accepted_count": 49.1,
+        "admitted_traffic_gbps": 4960.0,
+        "request_blocking_fraction": 0.31805555555555554,
+        "accepted_hotspot_endpoints": 26.3,
+        "accepted_hotspot_transits": 2.7,
+        "used_incident_resources": 31.7
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.65,
+      "n_seeds": 10,
+      "mean_offered_f": 48,
+      "mean_gain_gbps": 135.0,
+      "gain_sd_gbps": 117.96892246124258,
+      "mean_gain_vs_uniform_gbps": -10.0,
+      "gain_vs_uniform_sd_gbps": 185.29256146249728,
+      "wins": 7,
+      "ties": 2,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 43.9,
+        "admitted_traffic_gbps": 4395.0,
+        "request_blocking_fraction": 0.3902777777777778,
+        "accepted_hotspot_endpoints": 25.6,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 31.8
+      },
+      "online": {
+        "accepted_count": 45.3,
+        "admitted_traffic_gbps": 4530.0,
+        "request_blocking_fraction": 0.37083333333333335,
+        "accepted_hotspot_endpoints": 26.5,
+        "accepted_hotspot_transits": 2.4,
+        "used_incident_resources": 31.3
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.75,
+      "n_seeds": 10,
+      "mean_offered_f": 53.2,
+      "mean_gain_gbps": 260.0,
+      "gain_sd_gbps": 210.55482263138342,
+      "mean_gain_vs_uniform_gbps": 115.0,
+      "gain_vs_uniform_sd_gbps": 302.8109054252248,
+      "wins": 9,
+      "ties": 1,
+      "losses": 0,
+      "baseline": {
+        "accepted_count": 42.2,
+        "admitted_traffic_gbps": 4285.0,
+        "request_blocking_fraction": 0.41388888888888886,
+        "accepted_hotspot_endpoints": 27.4,
+        "accepted_hotspot_transits": 2.3,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 45,
+        "admitted_traffic_gbps": 4545.0,
+        "request_blocking_fraction": 0.375,
+        "accepted_hotspot_endpoints": 29.3,
+        "accepted_hotspot_transits": 1.3,
+        "used_incident_resources": 31.9
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 0.85,
+      "n_seeds": 10,
+      "mean_offered_f": 59.9,
+      "mean_gain_gbps": 170.0,
+      "gain_sd_gbps": 226.3232692902394,
+      "mean_gain_vs_uniform_gbps": 25.0,
+      "gain_vs_uniform_sd_gbps": 211.14765765533213,
+      "wins": 7,
+      "ties": 2,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 39.4,
+        "admitted_traffic_gbps": 4025.0,
+        "request_blocking_fraction": 0.4527777777777778,
+        "accepted_hotspot_endpoints": 30,
+        "accepted_hotspot_transits": 1,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 41.6,
+        "admitted_traffic_gbps": 4195.0,
+        "request_blocking_fraction": 0.4222222222222222,
+        "accepted_hotspot_endpoints": 31.6,
+        "accepted_hotspot_transits": 0.2,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 72,
+      "share": 1.0,
+      "n_seeds": 10,
+      "mean_offered_f": 72,
+      "mean_gain_gbps": -10.0,
+      "gain_sd_gbps": 69.9205898780101,
+      "mean_gain_vs_uniform_gbps": -155.0,
+      "gain_vs_uniform_sd_gbps": 195.00712237705005,
+      "wins": 4,
+      "ties": 3,
+      "losses": 3,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3235.0,
+        "request_blocking_fraction": 0.5555555555555556,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3225.0,
+        "request_blocking_fraction": 0.5555555555555556,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.16666666666666666,
+      "n_seeds": 10,
+      "mean_offered_f": 13.8,
+      "mean_gain_gbps": 175.0,
+      "gain_sd_gbps": 237.17082451262846,
+      "mean_gain_vs_uniform_gbps": 0.0,
+      "gain_vs_uniform_sd_gbps": 0.0,
+      "wins": 7,
+      "ties": 1,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 58.6,
+        "admitted_traffic_gbps": 5875.0,
+        "request_blocking_fraction": 0.38958333333333334,
+        "accepted_hotspot_endpoints": 8.6,
+        "accepted_hotspot_transits": 10.5,
+        "used_incident_resources": 29.6
+      },
+      "online": {
+        "accepted_count": 60.3,
+        "admitted_traffic_gbps": 6050.0,
+        "request_blocking_fraction": 0.371875,
+        "accepted_hotspot_endpoints": 9.3,
+        "accepted_hotspot_transits": 10.2,
+        "used_incident_resources": 29.7
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.25,
+      "n_seeds": 10,
+      "mean_offered_f": 21.5,
+      "mean_gain_gbps": 265.0,
+      "gain_sd_gbps": 272.8959915832811,
+      "mean_gain_vs_uniform_gbps": 90.0,
+      "gain_vs_uniform_sd_gbps": 271.6206504995115,
+      "wins": 9,
+      "ties": 0,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 55.7,
+        "admitted_traffic_gbps": 5580.0,
+        "request_blocking_fraction": 0.4197916666666667,
+        "accepted_hotspot_endpoints": 10.9,
+        "accepted_hotspot_transits": 9.5,
+        "used_incident_resources": 29.9
+      },
+      "online": {
+        "accepted_count": 57.8,
+        "admitted_traffic_gbps": 5845.0,
+        "request_blocking_fraction": 0.39791666666666664,
+        "accepted_hotspot_endpoints": 12.2,
+        "accepted_hotspot_transits": 8.5,
+        "used_incident_resources": 29.2
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.35,
+      "n_seeds": 10,
+      "mean_offered_f": 34.2,
+      "mean_gain_gbps": 45.0,
+      "gain_sd_gbps": 247.71175004652304,
+      "mean_gain_vs_uniform_gbps": -130.0,
+      "gain_vs_uniform_sd_gbps": 418.4627953726724,
+      "wins": 6,
+      "ties": 0,
+      "losses": 4,
+      "baseline": {
+        "accepted_count": 55.6,
+        "admitted_traffic_gbps": 5575.0,
+        "request_blocking_fraction": 0.42083333333333334,
+        "accepted_hotspot_endpoints": 17.4,
+        "accepted_hotspot_transits": 6.9,
+        "used_incident_resources": 31.2
+      },
+      "online": {
+        "accepted_count": 56.1,
+        "admitted_traffic_gbps": 5620.0,
+        "request_blocking_fraction": 0.415625,
+        "accepted_hotspot_endpoints": 18.5,
+        "accepted_hotspot_transits": 6,
+        "used_incident_resources": 30.5
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.45,
+      "n_seeds": 10,
+      "mean_offered_f": 45.6,
+      "mean_gain_gbps": 215.0,
+      "gain_sd_gbps": 290.64105391740895,
+      "mean_gain_vs_uniform_gbps": 40.0,
+      "gain_vs_uniform_sd_gbps": 456.31373223060274,
+      "wins": 9,
+      "ties": 0,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 54.7,
+        "admitted_traffic_gbps": 5465.0,
+        "request_blocking_fraction": 0.43020833333333336,
+        "accepted_hotspot_endpoints": 22.6,
+        "accepted_hotspot_transits": 4.3,
+        "used_incident_resources": 31.2
+      },
+      "online": {
+        "accepted_count": 56.4,
+        "admitted_traffic_gbps": 5680.0,
+        "request_blocking_fraction": 0.4125,
+        "accepted_hotspot_endpoints": 24.6,
+        "accepted_hotspot_transits": 3.4,
+        "used_incident_resources": 31.4
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.55,
+      "n_seeds": 10,
+      "mean_offered_f": 55.2,
+      "mean_gain_gbps": 200.0,
+      "gain_sd_gbps": 182.57418583505537,
+      "mean_gain_vs_uniform_gbps": 25.0,
+      "gain_vs_uniform_sd_gbps": 237.17082451262846,
+      "wins": 8,
+      "ties": 1,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 51.1,
+        "admitted_traffic_gbps": 5125.0,
+        "request_blocking_fraction": 0.46770833333333334,
+        "accepted_hotspot_endpoints": 24.9,
+        "accepted_hotspot_transits": 3.5,
+        "used_incident_resources": 31.9
+      },
+      "online": {
+        "accepted_count": 53,
+        "admitted_traffic_gbps": 5325.0,
+        "request_blocking_fraction": 0.4479166666666667,
+        "accepted_hotspot_endpoints": 26.6,
+        "accepted_hotspot_transits": 2.7,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.65,
+      "n_seeds": 10,
+      "mean_offered_f": 63.8,
+      "mean_gain_gbps": 180.0,
+      "gain_sd_gbps": 254.07785333546008,
+      "mean_gain_vs_uniform_gbps": 5.0,
+      "gain_vs_uniform_sd_gbps": 367.0074174242865,
+      "wins": 8,
+      "ties": 0,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 48.8,
+        "admitted_traffic_gbps": 4910.0,
+        "request_blocking_fraction": 0.49166666666666664,
+        "accepted_hotspot_endpoints": 25.8,
+        "accepted_hotspot_transits": 3.1,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 50.5,
+        "admitted_traffic_gbps": 5090.0,
+        "request_blocking_fraction": 0.4739583333333333,
+        "accepted_hotspot_endpoints": 27.2,
+        "accepted_hotspot_transits": 2.4,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.75,
+      "n_seeds": 10,
+      "mean_offered_f": 70.5,
+      "mean_gain_gbps": 215.0,
+      "gain_sd_gbps": 216.08897344483924,
+      "mean_gain_vs_uniform_gbps": 40.0,
+      "gain_vs_uniform_sd_gbps": 334.82997343593826,
+      "wins": 8,
+      "ties": 1,
+      "losses": 1,
+      "baseline": {
+        "accepted_count": 45.5,
+        "admitted_traffic_gbps": 4585.0,
+        "request_blocking_fraction": 0.5260416666666666,
+        "accepted_hotspot_endpoints": 27.4,
+        "accepted_hotspot_transits": 2.3,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 48,
+        "admitted_traffic_gbps": 4800.0,
+        "request_blocking_fraction": 0.5,
+        "accepted_hotspot_endpoints": 29.4,
+        "accepted_hotspot_transits": 1.3,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 0.85,
+      "n_seeds": 10,
+      "mean_offered_f": 80.2,
+      "mean_gain_gbps": 200.0,
+      "gain_sd_gbps": 263.5231383473649,
+      "mean_gain_vs_uniform_gbps": 25.0,
+      "gain_vs_uniform_sd_gbps": 336.0307525609325,
+      "wins": 8,
+      "ties": 0,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 41.4,
+        "admitted_traffic_gbps": 4170.0,
+        "request_blocking_fraction": 0.56875,
+        "accepted_hotspot_endpoints": 30,
+        "accepted_hotspot_transits": 1,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 43.4,
+        "admitted_traffic_gbps": 4370.0,
+        "request_blocking_fraction": 0.5479166666666667,
+        "accepted_hotspot_endpoints": 31.6,
+        "accepted_hotspot_transits": 0.2,
+        "used_incident_resources": 32
+      }
+    },
+    {
+      "cohort": "original",
+      "request_count": 96,
+      "share": 1.0,
+      "n_seeds": 10,
+      "mean_offered_f": 96,
+      "mean_gain_gbps": 0.0,
+      "gain_sd_gbps": 57.735026918962575,
+      "mean_gain_vs_uniform_gbps": -175.0,
+      "gain_vs_uniform_sd_gbps": 238.3391607679182,
+      "wins": 4,
+      "ties": 4,
+      "losses": 2,
+      "baseline": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3210.0,
+        "request_blocking_fraction": 0.6666666666666666,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      },
+      "online": {
+        "accepted_count": 32,
+        "admitted_traffic_gbps": 3210.0,
+        "request_blocking_fraction": 0.6666666666666666,
+        "accepted_hotspot_endpoints": 32,
+        "accepted_hotspot_transits": 0,
+        "used_incident_resources": 32
+      }
+    }
+  ],
+  "conversion": [
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 10.0,
+      "fixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mixed_gain_vs_none": 10.0,
+      "mixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 2390.0,
+      "fixed_gbps": 2390.0,
+      "mixed_count": 23.9,
+      "fixed_count": 23.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 11.9,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 2390.0,
+      "fixed_gbps": 2390.0,
+      "mixed_count": 23.9,
+      "fixed_count": 23.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 11.9,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 4565.0,
+      "fixed_gbps": 4370.0,
+      "mixed_count": 43.6,
+      "fixed_count": 43.7,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 7.9,
+        "100": 23.7,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 4030.0,
+      "fixed_gbps": 4040.0,
+      "mixed_count": 40.4,
+      "fixed_count": 40.4,
+      "fixed_gain_vs_none": 140.0,
+      "fixed_wins_ties_losses": [
+        7,
+        2,
+        1
+      ],
+      "mixed_gain_vs_none": 160.0,
+      "mixed_wins_ties_losses": [
+        8,
+        0,
+        2
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.1,
+        "100": 20.4,
+        "150": 9.9
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4165.0,
+      "fixed_gbps": 4180.0,
+      "mixed_count": 41.8,
+      "fixed_count": 41.8,
+      "fixed_gain_vs_none": 100.0,
+      "fixed_wins_ties_losses": [
+        7,
+        2,
+        1
+      ],
+      "mixed_gain_vs_none": 115.0,
+      "mixed_wins_ties_losses": [
+        9,
+        0,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.5,
+        "100": 21.1,
+        "150": 10.2
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 4565.0,
+      "fixed_gbps": 4370.0,
+      "mixed_count": 43.6,
+      "fixed_count": 43.7,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 7.9,
+        "100": 23.7,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 3870.0,
+      "fixed_gbps": 3900.0,
+      "mixed_count": 39,
+      "fixed_count": 39,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10,
+        "100": 19.6,
+        "150": 9.4
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4050.0,
+      "fixed_gbps": 4080.0,
+      "mixed_count": 40.8,
+      "fixed_count": 40.8,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.6,
+        "100": 20.2,
+        "150": 10
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 4565.0,
+      "fixed_gbps": 4370.0,
+      "mixed_count": 43.6,
+      "fixed_count": 43.7,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 7.9,
+        "100": 23.7,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 3925.0,
+      "fixed_gbps": 3940.0,
+      "mixed_count": 39.4,
+      "fixed_count": 39.4,
+      "fixed_gain_vs_none": 40.0,
+      "fixed_wins_ties_losses": [
+        3,
+        7,
+        0
+      ],
+      "mixed_gain_vs_none": 55.0,
+      "mixed_wins_ties_losses": [
+        3,
+        7,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10,
+        "100": 19.7,
+        "150": 9.7
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4045.0,
+      "fixed_gbps": 4080.0,
+      "mixed_count": 40.8,
+      "fixed_count": 40.8,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": -5.0,
+      "mixed_wins_ties_losses": [
+        0,
+        9,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.6,
+        "100": 20.3,
+        "150": 9.9
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 5765.0,
+      "fixed_gbps": 5220.0,
+      "mixed_count": 51.4,
+      "fixed_count": 52.2,
+      "fixed_gain_vs_none": 30.0,
+      "fixed_wins_ties_losses": [
+        3,
+        7,
+        0
+      ],
+      "mixed_gain_vs_none": 25.0,
+      "mixed_wins_ties_losses": [
+        4,
+        6,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 5.3,
+        "100": 28.3,
+        "150": 17.8
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 4510.0,
+      "fixed_gbps": 4490.0,
+      "mixed_count": 44.9,
+      "fixed_count": 44.9,
+      "fixed_gain_vs_none": 100.0,
+      "fixed_wins_ties_losses": [
+        5,
+        4,
+        1
+      ],
+      "mixed_gain_vs_none": 115.0,
+      "mixed_wins_ties_losses": [
+        6,
+        3,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.1,
+        "100": 22.3,
+        "150": 11.5
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4630.0,
+      "fixed_gbps": 4630.0,
+      "mixed_count": 46.3,
+      "fixed_count": 46.3,
+      "fixed_gain_vs_none": 100.0,
+      "fixed_wins_ties_losses": [
+        6,
+        2,
+        2
+      ],
+      "mixed_gain_vs_none": 100.0,
+      "mixed_wins_ties_losses": [
+        7,
+        1,
+        2
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.6,
+        "100": 23.1,
+        "150": 11.6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 5740.0,
+      "fixed_gbps": 5190.0,
+      "mixed_count": 51.2,
+      "fixed_count": 51.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 5.5,
+        "100": 27.8,
+        "150": 17.9
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 4395.0,
+      "fixed_gbps": 4390.0,
+      "mixed_count": 43.9,
+      "fixed_count": 43.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.2,
+        "100": 21.4,
+        "150": 11.3
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4530.0,
+      "fixed_gbps": 4530.0,
+      "mixed_count": 45.3,
+      "fixed_count": 45.3,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.5,
+        "100": 22.3,
+        "150": 11.5
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 5740.0,
+      "fixed_gbps": 5190.0,
+      "mixed_count": 51.2,
+      "fixed_count": 51.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 5.5,
+        "100": 27.8,
+        "150": 17.9
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 4425.0,
+      "fixed_gbps": 4430.0,
+      "mixed_count": 44.3,
+      "fixed_count": 44.3,
+      "fixed_gain_vs_none": 40.0,
+      "fixed_wins_ties_losses": [
+        4,
+        6,
+        0
+      ],
+      "mixed_gain_vs_none": 30.0,
+      "mixed_wins_ties_losses": [
+        4,
+        6,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.4,
+        "100": 21.6,
+        "150": 11.3
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4540.0,
+      "fixed_gbps": 4540.0,
+      "mixed_count": 45.4,
+      "fixed_count": 45.4,
+      "fixed_gain_vs_none": 10.0,
+      "fixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mixed_gain_vs_none": 10.0,
+      "mixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.5,
+        "100": 22.4,
+        "150": 11.5
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 6755.0,
+      "fixed_gbps": 5940.0,
+      "mixed_count": 58.7,
+      "fixed_count": 59.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 10.0,
+      "mixed_wins_ties_losses": [
+        2,
+        8,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 5.9,
+        "100": 29.2,
+        "150": 23.6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 4910.0,
+      "fixed_gbps": 4880.0,
+      "mixed_count": 48.8,
+      "fixed_count": 48.8,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        3,
+        3,
+        4
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        5,
+        1,
+        4
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.8,
+        "100": 24.6,
+        "150": 12.4
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5055.0,
+      "fixed_gbps": 5020.0,
+      "mixed_count": 50.2,
+      "fixed_count": 50.2,
+      "fixed_gain_vs_none": -30.0,
+      "fixed_wins_ties_losses": [
+        2,
+        4,
+        4
+      ],
+      "mixed_gain_vs_none": -35.0,
+      "mixed_wins_ties_losses": [
+        3,
+        2,
+        5
+      ],
+      "mean_accepted_by_rate": {
+        "50": 12,
+        "100": 25.5,
+        "150": 12.7
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 6745.0,
+      "fixed_gbps": 5940.0,
+      "mixed_count": 58.7,
+      "fixed_count": 59.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6.1,
+        "100": 29,
+        "150": 23.6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 4910.0,
+      "fixed_gbps": 4880.0,
+      "mixed_count": 48.8,
+      "fixed_count": 48.8,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.8,
+        "100": 24.6,
+        "150": 12.4
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5090.0,
+      "fixed_gbps": 5050.0,
+      "mixed_count": 50.5,
+      "fixed_count": 50.5,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 12,
+        "100": 25.7,
+        "150": 12.8
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 6745.0,
+      "fixed_gbps": 5940.0,
+      "mixed_count": 58.7,
+      "fixed_count": 59.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6.1,
+        "100": 29,
+        "150": 23.6
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 4925.0,
+      "fixed_gbps": 4900.0,
+      "mixed_count": 49,
+      "fixed_count": 49,
+      "fixed_gain_vs_none": 20.0,
+      "fixed_wins_ties_losses": [
+        2,
+        8,
+        0
+      ],
+      "mixed_gain_vs_none": 15.0,
+      "mixed_wins_ties_losses": [
+        3,
+        7,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 12,
+        "100": 24.5,
+        "150": 12.5
+      }
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5090.0,
+      "fixed_gbps": 5060.0,
+      "mixed_count": 50.6,
+      "fixed_count": 50.6,
+      "fixed_gain_vs_none": 10.0,
+      "fixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        1,
+        8,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 12.2,
+        "100": 25.6,
+        "150": 12.8
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 24,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 2400.0,
+      "fixed_gbps": 2400.0,
+      "mixed_count": 24,
+      "fixed_count": 24,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 6,
+        "100": 12,
+        "150": 6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 4720.0,
+      "fixed_gbps": 4640.0,
+      "mixed_count": 46.4,
+      "fixed_count": 46.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.4,
+        "100": 24,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 4435.0,
+      "fixed_gbps": 4430.0,
+      "mixed_count": 44.3,
+      "fixed_count": 44.3,
+      "fixed_gain_vs_none": 160.0,
+      "fixed_wins_ties_losses": [
+        7,
+        3,
+        0
+      ],
+      "mixed_gain_vs_none": 170.0,
+      "mixed_wins_ties_losses": [
+        9,
+        0,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11,
+        "100": 22.2,
+        "150": 11.1
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4550.0,
+      "fixed_gbps": 4550.0,
+      "mixed_count": 45.5,
+      "fixed_count": 45.5,
+      "fixed_gain_vs_none": 100.0,
+      "fixed_wins_ties_losses": [
+        6,
+        4,
+        0
+      ],
+      "mixed_gain_vs_none": 105.0,
+      "mixed_wins_ties_losses": [
+        8,
+        2,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.3,
+        "100": 22.9,
+        "150": 11.3
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 4720.0,
+      "fixed_gbps": 4640.0,
+      "mixed_count": 46.4,
+      "fixed_count": 46.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.4,
+        "100": 24,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 4265.0,
+      "fixed_gbps": 4270.0,
+      "mixed_count": 42.7,
+      "fixed_count": 42.7,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.7,
+        "100": 21.4,
+        "150": 10.6
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4445.0,
+      "fixed_gbps": 4450.0,
+      "mixed_count": 44.5,
+      "fixed_count": 44.5,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11.1,
+        "100": 22.4,
+        "150": 11
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 4720.0,
+      "fixed_gbps": 4640.0,
+      "mixed_count": 46.4,
+      "fixed_count": 46.4,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.4,
+        "100": 24,
+        "150": 12
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 4280.0,
+      "fixed_gbps": 4280.0,
+      "mixed_count": 42.8,
+      "fixed_count": 42.8,
+      "fixed_gain_vs_none": 10.0,
+      "fixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mixed_gain_vs_none": 15.0,
+      "mixed_wins_ties_losses": [
+        2,
+        8,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 10.7,
+        "100": 21.4,
+        "150": 10.7
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 48,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 4455.0,
+      "fixed_gbps": 4450.0,
+      "mixed_count": 44.5,
+      "fixed_count": 44.5,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 10.0,
+      "mixed_wins_ties_losses": [
+        1,
+        9,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 11,
+        "100": 22.4,
+        "150": 11.1
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 6240.0,
+      "fixed_gbps": 5810.0,
+      "mixed_count": 57.8,
+      "fixed_count": 58.1,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 8.8,
+        "100": 31,
+        "150": 18
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 5205.0,
+      "fixed_gbps": 5210.0,
+      "mixed_count": 52.1,
+      "fixed_count": 52.1,
+      "fixed_gain_vs_none": -10.0,
+      "fixed_wins_ties_losses": [
+        5,
+        1,
+        4
+      ],
+      "mixed_gain_vs_none": 20.0,
+      "mixed_wins_ties_losses": [
+        6,
+        0,
+        4
+      ],
+      "mean_accepted_by_rate": {
+        "50": 13.3,
+        "100": 25.6,
+        "150": 13.2
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5425.0,
+      "fixed_gbps": 5440.0,
+      "mixed_count": 54.4,
+      "fixed_count": 54.4,
+      "fixed_gain_vs_none": 90.0,
+      "fixed_wins_ties_losses": [
+        6,
+        2,
+        2
+      ],
+      "mixed_gain_vs_none": 95.0,
+      "mixed_wins_ties_losses": [
+        6,
+        2,
+        2
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.1,
+        "100": 26.5,
+        "150": 13.8
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 6240.0,
+      "fixed_gbps": 5810.0,
+      "mixed_count": 57.8,
+      "fixed_count": 58.1,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 8.8,
+        "100": 31,
+        "150": 18
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 5185.0,
+      "fixed_gbps": 5220.0,
+      "mixed_count": 52.2,
+      "fixed_count": 52.2,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 13.7,
+        "100": 25.5,
+        "150": 13
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5330.0,
+      "fixed_gbps": 5350.0,
+      "mixed_count": 53.5,
+      "fixed_count": 53.5,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 13.7,
+        "100": 26.5,
+        "150": 13.3
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 6240.0,
+      "fixed_gbps": 5810.0,
+      "mixed_count": 57.8,
+      "fixed_count": 58.1,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 8.8,
+        "100": 31,
+        "150": 18
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 5205.0,
+      "fixed_gbps": 5230.0,
+      "mixed_count": 52.3,
+      "fixed_count": 52.3,
+      "fixed_gain_vs_none": 10.0,
+      "fixed_wins_ties_losses": [
+        2,
+        6,
+        2
+      ],
+      "mixed_gain_vs_none": 20.0,
+      "mixed_wins_ties_losses": [
+        2,
+        6,
+        2
+      ],
+      "mean_accepted_by_rate": {
+        "50": 13.6,
+        "100": 25.6,
+        "150": 13.1
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 72,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5325.0,
+      "fixed_gbps": 5350.0,
+      "mixed_count": 53.5,
+      "fixed_count": 53.5,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        1,
+        8,
+        1
+      ],
+      "mixed_gain_vs_none": -5.0,
+      "mixed_wins_ties_losses": [
+        1,
+        8,
+        1
+      ],
+      "mean_accepted_by_rate": {
+        "50": 13.7,
+        "100": 26.6,
+        "150": 13.2
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "ILP",
+      "mixed_gbps": 7435.0,
+      "fixed_gbps": 6890.0,
+      "mixed_count": 67,
+      "fixed_count": 68.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 9,
+        "100": 34.3,
+        "150": 23.7
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "KSP-FF",
+      "mixed_gbps": 5745.0,
+      "fixed_gbps": 5740.0,
+      "mixed_count": 57.4,
+      "fixed_count": 57.4,
+      "fixed_gain_vs_none": -120.0,
+      "fixed_wins_ties_losses": [
+        2,
+        1,
+        7
+      ],
+      "mixed_gain_vs_none": -130.0,
+      "mixed_wins_ties_losses": [
+        4,
+        1,
+        5
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.4,
+        "100": 28.5,
+        "150": 14.5
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "all",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 5915.0,
+      "fixed_gbps": 5870.0,
+      "mixed_count": 58.7,
+      "fixed_count": 58.7,
+      "fixed_gain_vs_none": -160.0,
+      "fixed_wins_ties_losses": [
+        2,
+        1,
+        7
+      ],
+      "mixed_gain_vs_none": -135.0,
+      "mixed_wins_ties_losses": [
+        3,
+        0,
+        7
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.3,
+        "100": 29.2,
+        "150": 15.2
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "ILP",
+      "mixed_gbps": 7435.0,
+      "fixed_gbps": 6890.0,
+      "mixed_count": 67,
+      "fixed_count": 68.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 9,
+        "100": 34.3,
+        "150": 23.7
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "KSP-FF",
+      "mixed_gbps": 5875.0,
+      "fixed_gbps": 5860.0,
+      "mixed_count": 58.6,
+      "fixed_count": 58.6,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.7,
+        "100": 28.9,
+        "150": 15
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "none",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 6050.0,
+      "fixed_gbps": 6030.0,
+      "mixed_count": 60.3,
+      "fixed_count": 60.3,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.9,
+        "100": 30.1,
+        "150": 15.3
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "ILP",
+      "mixed_gbps": 7435.0,
+      "fixed_gbps": 6890.0,
+      "mixed_count": 67,
+      "fixed_count": 68.9,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mixed_gain_vs_none": 0.0,
+      "mixed_wins_ties_losses": [
+        0,
+        10,
+        0
+      ],
+      "mean_accepted_by_rate": {
+        "50": 9,
+        "100": 34.3,
+        "150": 23.7
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "KSP-FF",
+      "mixed_gbps": 5865.0,
+      "fixed_gbps": 5860.0,
+      "mixed_count": 58.6,
+      "fixed_count": 58.6,
+      "fixed_gain_vs_none": 0.0,
+      "fixed_wins_ties_losses": [
+        3,
+        5,
+        2
+      ],
+      "mixed_gain_vs_none": -10.0,
+      "mixed_wins_ties_losses": [
+        3,
+        5,
+        2
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.8,
+        "100": 28.9,
+        "150": 14.9
+      }
+    },
+    {
+      "scenario": "uniform_mixed",
+      "load": 96,
+      "layout": "only_A",
+      "method": "KSP-FF (max bottleneck)",
+      "mixed_gbps": 6030.0,
+      "fixed_gbps": 5990.0,
+      "mixed_count": 59.9,
+      "fixed_count": 59.9,
+      "fixed_gain_vs_none": -40.0,
+      "fixed_wins_ties_losses": [
+        0,
+        6,
+        4
+      ],
+      "mixed_gain_vs_none": -20.0,
+      "mixed_wins_ties_losses": [
+        1,
+        6,
+        3
+      ],
+      "mean_accepted_by_rate": {
+        "50": 14.6,
+        "100": 29.9,
+        "150": 15.4
+      }
+    }
+  ]
+}
