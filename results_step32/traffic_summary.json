@@ -1,0 +1,2143 @@
+{
+  "experiment": "step32_mesh12_traffic",
+  "physical": {
+    "parameters": {
+      "alpha_db_per_km": 0.22,
+      "span_length_km": 80.0,
+      "gamma_per_w_km": 1.3,
+      "beta2_abs_s2_per_km": 2.13e-23,
+      "carrier_frequency_hz": 193500000000000.0,
+      "symbol_rate_baud": 32000000000.0,
+      "channel_spacing_hz": 50000000000.0,
+      "channel_count": 80,
+      "noise_figure_db": 5.0
+    },
+    "fec_overhead": 0.2,
+    "modulations": [
+      {
+        "name": "PM-BPSK",
+        "bits_dp": 2,
+        "required_snr_db": 3.72
+      },
+      {
+        "name": "PM-QPSK",
+        "bits_dp": 4,
+        "required_snr_db": 6.73
+      },
+      {
+        "name": "PM-8QAM",
+        "bits_dp": 6,
+        "required_snr_db": 10.81
+      },
+      {
+        "name": "PM-16QAM",
+        "bits_dp": 8,
+        "required_snr_db": 13.24
+      },
+      {
+        "name": "PM-32QAM",
+        "bits_dp": 10,
+        "required_snr_db": 16.22
+      },
+      {
+        "name": "PM-64QAM",
+        "bits_dp": 12,
+        "required_snr_db": 19.01
+      },
+      {
+        "name": "PM-128QAM",
+        "bits_dp": 14,
+        "required_snr_db": 21.81
+      },
+      {
+        "name": "PM-256QAM",
+        "bits_dp": 16,
+        "required_snr_db": 24.65
+      },
+      {
+        "name": "PM-512QAM",
+        "bits_dp": 18,
+        "required_snr_db": 27.38
+      },
+      {
+        "name": "PM-1024QAM",
+        "bits_dp": 20,
+        "required_snr_db": 30.27
+      }
+    ],
+    "model": "Numerical coherent SPM + linear numerical XPM",
+    "snr_policy": "Full-load central-channel estimate, independent of occupancy and wavelength ID",
+    "power_unit_in_network_api": "W per channel, both polarizations",
+    "rate_definition": "symbol_rate * bits_dp / (1 + fec_overhead)",
+    "resource_policy": "Undirected shared resources; one continuous wavelength per admitted request",
+    "traffic_policy": "Static batch, no splitting, grooming, regeneration or departures"
+  },
+  "topology_name": "Synthetic 3-by-4 grid mesh; no geographic interpretation",
+  "nodes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "positions": {
+    "A": [
+      0,
+      2
+    ],
+    "B": [
+      1,
+      2
+    ],
+    "C": [
+      2,
+      2
+    ],
+    "D": [
+      3,
+      2
+    ],
+    "E": [
+      0,
+      1
+    ],
+    "F": [
+      1,
+      1
+    ],
+    "G": [
+      2,
+      1
+    ],
+    "H": [
+      3,
+      1
+    ],
+    "I": [
+      0,
+      0
+    ],
+    "J": [
+      1,
+      0
+    ],
+    "K": [
+      2,
+      0
+    ],
+    "L": [
+      3,
+      0
+    ]
+  },
+  "links": [
+    {
+      "nodes": [
+        "A",
+        "B"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "E"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "C"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "B",
+        "F"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "C",
+        "G"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "D",
+        "H"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "E",
+        "F"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "E",
+        "I"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "F",
+        "G"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "F",
+        "J"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "G",
+        "H"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "G",
+        "K"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "H",
+        "L"
+      ],
+      "length_km": 480.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "I",
+        "J"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "J",
+        "K"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "nodes": [
+        "K",
+        "L"
+      ],
+      "length_km": 320.0,
+      "available_wavelengths": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    }
+  ],
+  "physical_channels": 80,
+  "allocatable_wavelengths_per_link": 8,
+  "resource_scope": "Remaining physical channels are unavailable to these requests; full-load noise is retained",
+  "common_power_dbm": -1.4995629512219557,
+  "reference_power_distance_km": 800,
+  "snr_margin_db": 2.0,
+  "k_candidates": 4,
+  "seed_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "request_counts": [
+    24,
+    48,
+    72,
+    96
+  ],
+  "hotspot_node": "F",
+  "hotspot_pair_probability": 0.65,
+  "pair_probabilities": {
+    "uniform": [
+      {
+        "nodes": [
+          "A",
+          "B"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "C"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "D"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "E"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "F"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "A",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "C"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "D"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "E"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "F"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "B",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "D"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "E"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "F"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "C",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "E"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "F"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "D",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "F"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "E",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "G"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "F",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "G",
+          "H"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "G",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "G",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "G",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "G",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "H",
+          "I"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "H",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "H",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "H",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "I",
+          "J"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "I",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "I",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "J",
+          "K"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "J",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      },
+      {
+        "nodes": [
+          "K",
+          "L"
+        ],
+        "probability": 0.015151515151515152
+      }
+    ],
+    "hotspot": [
+      {
+        "nodes": [
+          "A",
+          "B"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "C"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "D"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "E"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "F"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "A",
+          "G"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "A",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "C"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "D"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "E"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "F"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "B",
+          "G"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "B",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "D"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "E"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "F"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "C",
+          "G"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "C",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "E"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "F"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "D",
+          "G"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "D",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "F"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "E",
+          "G"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "E",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "F",
+          "G"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "F",
+          "H"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "F",
+          "I"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "F",
+          "J"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "F",
+          "K"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "F",
+          "L"
+        ],
+        "probability": 0.05909090909090909
+      },
+      {
+        "nodes": [
+          "G",
+          "H"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "G",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "G",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "G",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "G",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "H",
+          "I"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "H",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "H",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "H",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "I",
+          "J"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "I",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "I",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "J",
+          "K"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "J",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      },
+      {
+        "nodes": [
+          "K",
+          "L"
+        ],
+        "probability": 0.006363636363636363
+      }
+    ]
+  },
+  "traffic": {
+    "type": "Static batch without departures; offered load is total requested Gbit/s",
+    "fixed_rate_gbps": 100,
+    "mixed_rates_gbps": [
+      50,
+      100,
+      150
+    ],
+    "mixed_fractions": [
+      0.25,
+      0.5,
+      0.25
+    ],
+    "total_demand": "100 * request_count for every batch",
+    "pairing": "Same OD sequence and arrival order for fixed/mixed counterparts; separate OD/rate RNG streams"
+  },
+  "ilp_solver_time_limit_seconds": 2.0,
+  "timing": "Per-instance construction + candidate generation + solve; excludes shared physics warmup and result audit",
+  "physical_warmup_seconds": 0.9863608000000568,
+  "limitations": [
+    "Synthetic topology and static batch; blocking fractions are not steady-state probabilities",
+    "ILP optimality is restricted to the K candidate routes and the fixed physical assumptions",
+    "Time-limited ILP incumbents are feasible benchmarks, not certified optima",
+    "Error bars are sample standard deviations across seeds, not confidence intervals"
+  ],
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "networkx": "3.7"
+  },
+  "summary": [
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 24,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.23113576000005195,
+      "elapsed_seconds_sd": 0.22099182231498277
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 24,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2390.0,
+      "admitted_traffic_gbps_sd": 31.622776601683793,
+      "request_blocking_fraction_mean": 0.004166666666666663,
+      "request_blocking_fraction_sd": 0.013176156917368235,
+      "bandwidth_blocking_fraction_mean": 0.004166666666666663,
+      "bandwidth_blocking_fraction_sd": 0.013176156917368235,
+      "elapsed_seconds_mean": 0.005441849999920123,
+      "elapsed_seconds_sd": 0.0006618595927921745
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 24,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2280.0,
+      "admitted_traffic_gbps_sd": 122.92725943057184,
+      "request_blocking_fraction_mean": 0.05,
+      "request_blocking_fraction_sd": 0.05121969142940494,
+      "bandwidth_blocking_fraction_mean": 0.05,
+      "bandwidth_blocking_fraction_sd": 0.05121969142940494,
+      "elapsed_seconds_mean": 0.0013927000000194313,
+      "elapsed_seconds_sd": 0.00021992588148234314
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 48,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 4370.0,
+      "admitted_traffic_gbps_sd": 194.6506842754191,
+      "request_blocking_fraction_mean": 0.08958333333333333,
+      "request_blocking_fraction_sd": 0.040552225890712314,
+      "bandwidth_blocking_fraction_mean": 0.08958333333333333,
+      "bandwidth_blocking_fraction_sd": 0.040552225890712314,
+      "elapsed_seconds_mean": 0.4426687599999923,
+      "elapsed_seconds_sd": 0.2193222097588942
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 48,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3900.0,
+      "admitted_traffic_gbps_sd": 200.0,
+      "request_blocking_fraction_mean": 0.1875,
+      "request_blocking_fraction_sd": 0.04166666666666668,
+      "bandwidth_blocking_fraction_mean": 0.1875,
+      "bandwidth_blocking_fraction_sd": 0.04166666666666668,
+      "elapsed_seconds_mean": 0.009681979999982104,
+      "elapsed_seconds_sd": 0.0008864080509723837
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 48,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3370.0,
+      "admitted_traffic_gbps_sd": 240.60109910158118,
+      "request_blocking_fraction_mean": 0.2979166666666667,
+      "request_blocking_fraction_sd": 0.05012522897949607,
+      "bandwidth_blocking_fraction_mean": 0.2979166666666667,
+      "bandwidth_blocking_fraction_sd": 0.05012522897949607,
+      "elapsed_seconds_mean": 0.002125830000068163,
+      "elapsed_seconds_sd": 0.00013201922464321192
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 72,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 9,
+      "admitted_traffic_gbps_mean": 5190.0,
+      "admitted_traffic_gbps_sd": 196.92073983655908,
+      "request_blocking_fraction_mean": 0.2791666666666667,
+      "request_blocking_fraction_sd": 0.027350102755077644,
+      "bandwidth_blocking_fraction_mean": 0.2791666666666667,
+      "bandwidth_blocking_fraction_sd": 0.027350102755077644,
+      "elapsed_seconds_mean": 0.6425820200000316,
+      "elapsed_seconds_sd": 0.5522011301089208
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 72,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4390.0,
+      "admitted_traffic_gbps_sd": 237.81411975649291,
+      "request_blocking_fraction_mean": 0.3902777777777778,
+      "request_blocking_fraction_sd": 0.033029738855068456,
+      "bandwidth_blocking_fraction_mean": 0.3902777777777778,
+      "bandwidth_blocking_fraction_sd": 0.033029738855068456,
+      "elapsed_seconds_mean": 0.014065830000049573,
+      "elapsed_seconds_sd": 0.00220058747861982
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 72,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3970.0,
+      "admitted_traffic_gbps_sd": 352.92429153510466,
+      "request_blocking_fraction_mean": 0.44861111111111107,
+      "request_blocking_fraction_sd": 0.04901726271320899,
+      "bandwidth_blocking_fraction_mean": 0.44861111111111107,
+      "bandwidth_blocking_fraction_sd": 0.04901726271320899,
+      "elapsed_seconds_mean": 0.00296683000003668,
+      "elapsed_seconds_sd": 0.0005019350844723932
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 96,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 5940.0,
+      "admitted_traffic_gbps_sd": 474.22451316743303,
+      "request_blocking_fraction_mean": 0.38125,
+      "request_blocking_fraction_sd": 0.04939838678827427,
+      "bandwidth_blocking_fraction_mean": 0.38125,
+      "bandwidth_blocking_fraction_sd": 0.04939838678827427,
+      "elapsed_seconds_mean": 0.5125907599999892,
+      "elapsed_seconds_sd": 0.16285879268415607
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 96,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4880.0,
+      "admitted_traffic_gbps_sd": 361.4784456460256,
+      "request_blocking_fraction_mean": 0.4916666666666667,
+      "request_blocking_fraction_sd": 0.03765400475479435,
+      "bandwidth_blocking_fraction_mean": 0.4916666666666667,
+      "bandwidth_blocking_fraction_sd": 0.03765400475479435,
+      "elapsed_seconds_mean": 0.015991830000052686,
+      "elapsed_seconds_sd": 0.0004991723105995045
+    },
+    {
+      "scenario": "hotspot_fixed",
+      "request_count": 96,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4580.0,
+      "admitted_traffic_gbps_sd": 454.1169697580374,
+      "request_blocking_fraction_mean": 0.5229166666666667,
+      "request_blocking_fraction_sd": 0.04730385101646221,
+      "bandwidth_blocking_fraction_mean": 0.5229166666666667,
+      "bandwidth_blocking_fraction_sd": 0.04730385101646221,
+      "elapsed_seconds_mean": 0.0034732500000018264,
+      "elapsed_seconds_sd": 0.00029100684315437337
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 24,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.1259710000000041,
+      "elapsed_seconds_sd": 0.14225780489688938
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 24,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2390.0,
+      "admitted_traffic_gbps_sd": 31.622776601683793,
+      "request_blocking_fraction_mean": 0.004166666666666663,
+      "request_blocking_fraction_sd": 0.013176156917368235,
+      "bandwidth_blocking_fraction_mean": 0.004166666666666663,
+      "bandwidth_blocking_fraction_sd": 0.013176156917368235,
+      "elapsed_seconds_mean": 0.005349580000051901,
+      "elapsed_seconds_sd": 0.00040937619152578826
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 24,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2255.0,
+      "admitted_traffic_gbps_sd": 151.74906186786717,
+      "request_blocking_fraction_mean": 0.05,
+      "request_blocking_fraction_sd": 0.05121969142940494,
+      "bandwidth_blocking_fraction_mean": 0.06041666666666666,
+      "bandwidth_blocking_fraction_sd": 0.063228775778278,
+      "elapsed_seconds_mean": 0.0013619999999718857,
+      "elapsed_seconds_sd": 0.00018065650649279845
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 48,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 4565.0,
+      "admitted_traffic_gbps_sd": 127.03892666773004,
+      "request_blocking_fraction_mean": 0.09166666666666666,
+      "request_blocking_fraction_sd": 0.04413957939464083,
+      "bandwidth_blocking_fraction_mean": 0.04895833333333334,
+      "bandwidth_blocking_fraction_sd": 0.02646644305577708,
+      "elapsed_seconds_mean": 0.6482563200000413,
+      "elapsed_seconds_sd": 0.28894842092200246
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 48,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3870.0,
+      "admitted_traffic_gbps_sd": 207.0963275601209,
+      "request_blocking_fraction_mean": 0.1875,
+      "request_blocking_fraction_sd": 0.04166666666666668,
+      "bandwidth_blocking_fraction_mean": 0.19375,
+      "bandwidth_blocking_fraction_sd": 0.04314506824169185,
+      "elapsed_seconds_mean": 0.009450510000056056,
+      "elapsed_seconds_sd": 0.0007558673685102563
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 48,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3375.0,
+      "admitted_traffic_gbps_sd": 273.09949346956563,
+      "request_blocking_fraction_mean": 0.2979166666666667,
+      "request_blocking_fraction_sd": 0.05012522897949607,
+      "bandwidth_blocking_fraction_mean": 0.296875,
+      "bandwidth_blocking_fraction_sd": 0.05689572780615951,
+      "elapsed_seconds_mean": 0.002149310000049809,
+      "elapsed_seconds_sd": 0.00022821053367139975
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 72,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 5740.0,
+      "admitted_traffic_gbps_sd": 159.51314818673865,
+      "request_blocking_fraction_mean": 0.28888888888888886,
+      "request_blocking_fraction_sd": 0.026024943189917042,
+      "bandwidth_blocking_fraction_mean": 0.20277777777777778,
+      "bandwidth_blocking_fraction_sd": 0.022154603914824808,
+      "elapsed_seconds_mean": 0.5693348900000273,
+      "elapsed_seconds_sd": 0.269689474892771
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 72,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4395.0,
+      "admitted_traffic_gbps_sd": 227.85229133512496,
+      "request_blocking_fraction_mean": 0.3902777777777778,
+      "request_blocking_fraction_sd": 0.033029738855068456,
+      "bandwidth_blocking_fraction_mean": 0.38958333333333334,
+      "bandwidth_blocking_fraction_sd": 0.03164615157432289,
+      "elapsed_seconds_mean": 0.013299600000027566,
+      "elapsed_seconds_sd": 0.001287415996842905
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 72,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 3960.0,
+      "admitted_traffic_gbps_sd": 360.40101122068023,
+      "request_blocking_fraction_mean": 0.44861111111111107,
+      "request_blocking_fraction_sd": 0.04901726271320899,
+      "bandwidth_blocking_fraction_mean": 0.45,
+      "bandwidth_blocking_fraction_sd": 0.05005569600287226,
+      "elapsed_seconds_mean": 0.002844939999977214,
+      "elapsed_seconds_sd": 0.00026593713622865623
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 96,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 6745.0,
+      "admitted_traffic_gbps_sd": 360.90164865237176,
+      "request_blocking_fraction_mean": 0.3885416666666666,
+      "request_blocking_fraction_sd": 0.048374922241300314,
+      "bandwidth_blocking_fraction_mean": 0.2973958333333333,
+      "bandwidth_blocking_fraction_sd": 0.03759392173462205,
+      "elapsed_seconds_mean": 0.8060695099999975,
+      "elapsed_seconds_sd": 0.3789039119282345
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 96,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4910.0,
+      "admitted_traffic_gbps_sd": 399.8610869900807,
+      "request_blocking_fraction_mean": 0.4916666666666667,
+      "request_blocking_fraction_sd": 0.03765400475479435,
+      "bandwidth_blocking_fraction_mean": 0.4885416666666667,
+      "bandwidth_blocking_fraction_sd": 0.04165219656146677,
+      "elapsed_seconds_mean": 0.017384050000009664,
+      "elapsed_seconds_sd": 0.0019379371496885485
+    },
+    {
+      "scenario": "hotspot_mixed",
+      "request_count": 96,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4555.0,
+      "admitted_traffic_gbps_sd": 494.66599281176025,
+      "request_blocking_fraction_mean": 0.5229166666666667,
+      "request_blocking_fraction_sd": 0.04730385101646221,
+      "bandwidth_blocking_fraction_mean": 0.5255208333333334,
+      "bandwidth_blocking_fraction_sd": 0.05152770758455838,
+      "elapsed_seconds_mean": 0.003697069999998348,
+      "elapsed_seconds_sd": 0.0006787720597048976
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 24,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.2739408800000092,
+      "elapsed_seconds_sd": 0.2205394885200318
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 24,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.0057231200000160245,
+      "elapsed_seconds_sd": 0.0007951182634060002
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 24,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2370.0,
+      "admitted_traffic_gbps_sd": 94.86832980505137,
+      "request_blocking_fraction_mean": 0.0125,
+      "request_blocking_fraction_sd": 0.03952847075210474,
+      "bandwidth_blocking_fraction_mean": 0.0125,
+      "bandwidth_blocking_fraction_sd": 0.03952847075210474,
+      "elapsed_seconds_mean": 0.0013238999999657607,
+      "elapsed_seconds_sd": 0.00018517256212370153
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 48,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 4640.0,
+      "admitted_traffic_gbps_sd": 250.3331114069145,
+      "request_blocking_fraction_mean": 0.033333333333333326,
+      "request_blocking_fraction_sd": 0.05215273154310718,
+      "bandwidth_blocking_fraction_mean": 0.033333333333333326,
+      "bandwidth_blocking_fraction_sd": 0.05215273154310718,
+      "elapsed_seconds_mean": 0.6818708099999867,
+      "elapsed_seconds_sd": 0.2945242547089267
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 48,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4270.0,
+      "admitted_traffic_gbps_sd": 211.08186931983417,
+      "request_blocking_fraction_mean": 0.11041666666666668,
+      "request_blocking_fraction_sd": 0.043975389441632116,
+      "bandwidth_blocking_fraction_mean": 0.11041666666666668,
+      "bandwidth_blocking_fraction_sd": 0.043975389441632116,
+      "elapsed_seconds_mean": 0.009672420000038073,
+      "elapsed_seconds_sd": 0.001230440974941991
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 48,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4000.0,
+      "admitted_traffic_gbps_sd": 205.48046676563254,
+      "request_blocking_fraction_mean": 0.16666666666666666,
+      "request_blocking_fraction_sd": 0.04280843057617345,
+      "bandwidth_blocking_fraction_mean": 0.16666666666666666,
+      "bandwidth_blocking_fraction_sd": 0.04280843057617345,
+      "elapsed_seconds_mean": 0.00221400000000358,
+      "elapsed_seconds_sd": 0.000557462706282701
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 72,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 5810.0,
+      "admitted_traffic_gbps_sd": 428.0446497997869,
+      "request_blocking_fraction_mean": 0.19305555555555554,
+      "request_blocking_fraction_sd": 0.05945064580552595,
+      "bandwidth_blocking_fraction_mean": 0.19305555555555554,
+      "bandwidth_blocking_fraction_sd": 0.05945064580552595,
+      "elapsed_seconds_mean": 0.8849836899999446,
+      "elapsed_seconds_sd": 0.5310153839431784
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 72,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5220.0,
+      "admitted_traffic_gbps_sd": 361.4784456460256,
+      "request_blocking_fraction_mean": 0.27499999999999997,
+      "request_blocking_fraction_sd": 0.05020533967305911,
+      "bandwidth_blocking_fraction_mean": 0.27499999999999997,
+      "bandwidth_blocking_fraction_sd": 0.05020533967305911,
+      "elapsed_seconds_mean": 0.013823740000043471,
+      "elapsed_seconds_sd": 0.0014035815886488117
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 72,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4930.0,
+      "admitted_traffic_gbps_sd": 340.0980250849256,
+      "request_blocking_fraction_mean": 0.3152777777777778,
+      "request_blocking_fraction_sd": 0.04723583681735076,
+      "bandwidth_blocking_fraction_mean": 0.3152777777777778,
+      "bandwidth_blocking_fraction_sd": 0.04723583681735076,
+      "elapsed_seconds_mean": 0.0026752699999406104,
+      "elapsed_seconds_sd": 8.402479859643678e-05
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 96,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 9,
+      "admitted_traffic_gbps_mean": 6730.0,
+      "admitted_traffic_gbps_sd": 473.87293186629216,
+      "request_blocking_fraction_mean": 0.2989583333333333,
+      "request_blocking_fraction_sd": 0.04936176373607211,
+      "bandwidth_blocking_fraction_mean": 0.2989583333333333,
+      "bandwidth_blocking_fraction_sd": 0.04936176373607211,
+      "elapsed_seconds_mean": 1.035841460000006,
+      "elapsed_seconds_sd": 0.45667986844831177
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 96,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5860.0,
+      "admitted_traffic_gbps_sd": 374.7591819348052,
+      "request_blocking_fraction_mean": 0.3895833333333333,
+      "request_blocking_fraction_sd": 0.03903741478487555,
+      "bandwidth_blocking_fraction_mean": 0.3895833333333333,
+      "bandwidth_blocking_fraction_sd": 0.03903741478487555,
+      "elapsed_seconds_mean": 0.018470049999928052,
+      "elapsed_seconds_sd": 0.0012342482365709842
+    },
+    {
+      "scenario": "uniform_fixed",
+      "request_count": 96,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5700.0,
+      "admitted_traffic_gbps_sd": 346.41016151377545,
+      "request_blocking_fraction_mean": 0.40625,
+      "request_blocking_fraction_sd": 0.03608439182435161,
+      "bandwidth_blocking_fraction_mean": 0.40625,
+      "bandwidth_blocking_fraction_sd": 0.03608439182435161,
+      "elapsed_seconds_mean": 0.0038192700000536208,
+      "elapsed_seconds_sd": 0.0005542495087420055
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 24,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.22652838999997585,
+      "elapsed_seconds_sd": 0.1675902901585279
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 24,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2400.0,
+      "admitted_traffic_gbps_sd": 0.0,
+      "request_blocking_fraction_mean": 0.0,
+      "request_blocking_fraction_sd": 0.0,
+      "bandwidth_blocking_fraction_mean": 0.0,
+      "bandwidth_blocking_fraction_sd": 0.0,
+      "elapsed_seconds_mean": 0.0048246299999846086,
+      "elapsed_seconds_sd": 0.00011820163606274238
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 24,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 2375.0,
+      "admitted_traffic_gbps_sd": 79.05694150420949,
+      "request_blocking_fraction_mean": 0.0125,
+      "request_blocking_fraction_sd": 0.03952847075210474,
+      "bandwidth_blocking_fraction_mean": 0.010416666666666663,
+      "bandwidth_blocking_fraction_sd": 0.032940392293420606,
+      "elapsed_seconds_mean": 0.0011680600000090636,
+      "elapsed_seconds_sd": 2.693082493185973e-05
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 48,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 10,
+      "admitted_traffic_gbps_mean": 4720.0,
+      "admitted_traffic_gbps_sd": 125.16655570345725,
+      "request_blocking_fraction_mean": 0.033333333333333326,
+      "request_blocking_fraction_sd": 0.05215273154310718,
+      "bandwidth_blocking_fraction_mean": 0.016666666666666673,
+      "bandwidth_blocking_fraction_sd": 0.026076365771553603,
+      "elapsed_seconds_mean": 0.6827429700000721,
+      "elapsed_seconds_sd": 0.30204001911758105
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 48,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4265.0,
+      "admitted_traffic_gbps_sd": 205.54804791094466,
+      "request_blocking_fraction_mean": 0.11041666666666668,
+      "request_blocking_fraction_sd": 0.043975389441632116,
+      "bandwidth_blocking_fraction_mean": 0.11145833333333333,
+      "bandwidth_blocking_fraction_sd": 0.042822509981446814,
+      "elapsed_seconds_mean": 0.00884457999998176,
+      "elapsed_seconds_sd": 0.0002112100787116453
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 48,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4005.0,
+      "admitted_traffic_gbps_sd": 196.42640691448116,
+      "request_blocking_fraction_mean": 0.16666666666666666,
+      "request_blocking_fraction_sd": 0.04280843057617345,
+      "bandwidth_blocking_fraction_mean": 0.165625,
+      "bandwidth_blocking_fraction_sd": 0.0409221681071836,
+      "elapsed_seconds_mean": 0.0019691000000193527,
+      "elapsed_seconds_sd": 6.858325029251621e-05
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 72,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 9,
+      "admitted_traffic_gbps_mean": 6105.0,
+      "admitted_traffic_gbps_sd": 618.4433864326,
+      "request_blocking_fraction_mean": 0.21666666666666665,
+      "request_blocking_fraction_sd": 0.09649196644528167,
+      "bandwidth_blocking_fraction_mean": 0.1520833333333333,
+      "bandwidth_blocking_fraction_sd": 0.08589491478230554,
+      "elapsed_seconds_mean": 0.9588626600000453,
+      "elapsed_seconds_sd": 0.4284513830124835
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 72,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5185.0,
+      "admitted_traffic_gbps_sd": 355.94163067059804,
+      "request_blocking_fraction_mean": 0.27499999999999997,
+      "request_blocking_fraction_sd": 0.05020533967305911,
+      "bandwidth_blocking_fraction_mean": 0.2798611111111111,
+      "bandwidth_blocking_fraction_sd": 0.049436337593138625,
+      "elapsed_seconds_mean": 0.013233930000001237,
+      "elapsed_seconds_sd": 0.00032857223139874924
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 72,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 4885.0,
+      "admitted_traffic_gbps_sd": 352.01799196442596,
+      "request_blocking_fraction_mean": 0.3152777777777778,
+      "request_blocking_fraction_sd": 0.04723583681735076,
+      "bandwidth_blocking_fraction_mean": 0.32152777777777775,
+      "bandwidth_blocking_fraction_sd": 0.04889138777283697,
+      "elapsed_seconds_mean": 0.0027726000000257043,
+      "elapsed_seconds_sd": 0.0001677950138589496
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 96,
+      "method": "ILP",
+      "seed_count": 10,
+      "proven_optimal_count": 9,
+      "admitted_traffic_gbps_mean": 7260.0,
+      "admitted_traffic_gbps_sd": 646.7010300148147,
+      "request_blocking_fraction_mean": 0.315625,
+      "request_blocking_fraction_sd": 0.05852522999780776,
+      "bandwidth_blocking_fraction_mean": 0.24375,
+      "bandwidth_blocking_fraction_sd": 0.0673646906265432,
+      "elapsed_seconds_mean": 1.0300391399999853,
+      "elapsed_seconds_sd": 0.5355551798934062
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 96,
+      "method": "KSP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5875.0,
+      "admitted_traffic_gbps_sd": 432.8522971073518,
+      "request_blocking_fraction_mean": 0.3895833333333333,
+      "request_blocking_fraction_sd": 0.03903741478487555,
+      "bandwidth_blocking_fraction_mean": 0.38802083333333337,
+      "bandwidth_blocking_fraction_sd": 0.045088780948682475,
+      "elapsed_seconds_mean": 0.018636730000002898,
+      "elapsed_seconds_sd": 0.0017135231082433893
+    },
+    {
+      "scenario": "uniform_mixed",
+      "request_count": 96,
+      "method": "SP-FF",
+      "seed_count": 10,
+      "proven_optimal_count": 0,
+      "admitted_traffic_gbps_mean": 5735.0,
+      "admitted_traffic_gbps_sd": 380.8251275556509,
+      "request_blocking_fraction_mean": 0.40625,
+      "request_blocking_fraction_sd": 0.03608439182435161,
+      "bandwidth_blocking_fraction_mean": 0.4026041666666667,
+      "bandwidth_blocking_fraction_sd": 0.03966928412038029,
+      "elapsed_seconds_mean": 0.003558679999969172,
+      "elapsed_seconds_sd": 0.00011976654881896021
+    }
+  ],
+  "complete": true,
+  "total_elapsed_seconds": 101.46579420000012
+}

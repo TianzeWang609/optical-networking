@@ -13,6 +13,59 @@ Code identifiers, output and plot labels use English; code comments use Chinese.
   an experiment runner, regression tests and reference results. See its
   [README](optical_networking_refactored/README.md) for model assumptions,
   experiment options and validation details.
+- `step26_reference_physics.py` through `step30_reference_curves.py`: reference
+  parameters, numerical GN integration and accumulation checks.
+- `reference_physical_model.py`: adopted 32 GBd reference physical layer.
+- `reference_network.py`: reference-physics adapter, modulation/FEC and plan audits.
+- `step31_reference_network.py`: four-node reference-parameter allocation experiments.
+- `network_scenarios.py` and `step32_network_traffic.py`: synthetic 12-node mesh,
+  paired uniform/hotspot and fixed/mixed traffic experiments.
+- [EXPERIMENTS_WEEK2.md](EXPERIMENTS_WEEK2.md): Chinese experiment guide, assumptions
+  and interpretation of the new results.
+
+## Reference network and larger traffic experiments
+
+Run from the project root:
+
+```shell
+python step31_reference_network.py --no-show
+python step32_network_traffic.py --no-show
+python -m unittest -v test_reference_network
+```
+
+Step 31 saves outputs in `results_step31/`. Step 32 saves inputs, individual plans,
+solver bounds, aggregate statistics and plots in `results_step32/`. Its default
+run uses 10 seeds, 4 static request counts, 4 traffic scenarios and 3 methods
+(480 allocation runs). Each ILP solve has a 2-second solver limit; time-limited
+feasible results are explicitly distinguished from proven optima. The limit
+does not include model construction and is not a hard process deadline.
+
+The physical model retains 80 full-load channels. The initial larger-network
+pilot makes 8 wavelengths per link available to the generated requests; the
+remaining channels are outside the admitted-demand metric. To change that
+resource budget, pass `--wavelengths` without changing the physical channel count.
+All requests consume a whole wavelength, including lower-rate requests.
+
+For a quick separate run:
+
+```shell
+python step32_network_traffic.py --no-show --seeds 2 --loads 24 48 --output-dir work/mesh_smoke
+```
+
+The original nine regression tests remain available using the command below.
+They also passed on Windows Python 3.13 during the reference-network integration.
+
+To extend only the unproven ILPs in an existing completed run:
+
+```shell
+python step32_network_traffic.py --no-show --certify-existing --ilp-seconds 10
+```
+
+This reads the original saved configuration and requests, preserves the original
+outputs, and saves the derived dataset in `results_step32/certified/`. Its timing
+includes initial + retry time for retried ILPs. The supplied pilot has all 160
+ILP instances certified after this pass; use the certified dataset for optimal
+benchmark comparisons and the original dataset for the fixed 2-second budget.
 
 ## Requirements
 
